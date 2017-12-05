@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 18.3.0"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><style>/* --- PERMALINKS --- */
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 18.3.0"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><style>/* --- PERMALINKS --- */
 
 .permalink {
   width: 1px;
@@ -24,36 +24,7 @@
 		<title>Graphics Accessibility API Mappings</title>
 		<script src="https://www.w3.org/scripts/jquery/1.11/jquery.min.js"></script>
 		
-		
-		
-		
-		<link href="common/css/mapping-tables.css" rel="stylesheet" type="text/css">
-		<link href="common/ccommon/.css" rel="stylesheet" type="text/css">
-		<!--<link href="css/dpub-aam.css" rel="stylesheet" type="text/css"/>-->
-		
-		<script src="common/script/jquery.details.min.js"></script>
-		<script src="common/script/mapping-tables.js"></script>
-		<script type="text/javascript">
-
-var mappingTableLabels = {
-  viewByTable: "View as a single table",
-  expand: "Expand all",
-  collapse: "Collapse all",
-  showHideCols: "Show/Hide Columns:",
-  showActionText: "Show",
-  hideActionText: "Hide",
-  showToolTipText: "Show column",
-  hideToolTipText: "Hide column",
-
-  // map where keys are @id of associated mapping table:
-  viewByLabels: {
-    "role-mapping-table": "View by roles",
-    "state-property-mapping-table": "View by state/property",
-    "event-mapping-table": "View by state/property"
-  }
-}
-</script>
-	<style id="respec-mainstyle">/*****************************************************************
+		<style id="respec-mainstyle">/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
  *****************************************************************/
@@ -326,13 +297,42 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/graphics-aam-1.0/"><script id="initialUserConfig" type="application/json">{
+</style>
+		
+		
+		<link href="common/css/mapping-tables.css" rel="stylesheet" type="text/css">
+		<link href="common/ccommon/.css" rel="stylesheet" type="text/css">
+		<!--<link href="css/dpub-aam.css" rel="stylesheet" type="text/css"/>-->
+		
+		<script src="common/script/jquery.details.min.js"></script>
+		<script src="common/script/mapping-tables.js"></script>
+		<script type="text/javascript">
+
+var mappingTableLabels = {
+  viewByTable: "View as a single table",
+  expand: "Expand all",
+  collapse: "Collapse all",
+  showHideCols: "Show/Hide Columns:",
+  showActionText: "Show",
+  hideActionText: "Hide",
+  showToolTipText: "Show column",
+  hideToolTipText: "Hide column",
+
+  // map where keys are @id of associated mapping table:
+  viewByLabels: {
+    "role-mapping-table": "View by roles",
+    "state-property-mapping-table": "View by state/property",
+    "event-mapping-table": "View by state/property"
+  }
+}
+</script>
+	<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/graphics-aam-1.0/"><script id="initialUserConfig" type="application/json">{
   "includePermalinks": true,
   "specStatus": "ED",
   "diffTool": "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
   "shortName": "graphics-aam-1.0",
   "copyrightStart": "2016",
-  "edDraftURI": "http://w3c.github.io/aria/graphics-aam/graphics-aam.html",
+  "edDraftURI": "http://w3c.github.io/graphics-aam/",
   "editors": [
     {
       "name": "Amelia Bellamy-Royds",
@@ -397,37 +397,37 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   ],
   "tocIntroductory": true,
   "ariaSpecURLs": {
-    "ED": "https://rawgit.com/w3c/aria/master/aria/dpub.html",
+    "ED": "https://w3c.github.io/aria/",
     "FPWD": "http://www.w3.org/TR/wai-aria-1.1/",
     "WD": "http://www.w3.org/TR/wai-aria-1.1/",
     "REC": "http://www.w3.org/TR/wai-aria/"
   },
   "accNameURLs": {
-    "ED": "http://w3c.github.io/aria/accname-aam/accname-aam.html",
+    "ED": "http://w3c.github.io/accname/",
     "WD": "http://www.w3.org/TR/accname-aam-1.1/",
     "FPWD": "http://www.w3.org/TR/accname-aam-1.1/",
     "REC": "http://www.w3.org/TR/accname-aam/"
   },
   "coreMappingURLs": {
-    "ED": "http://w3c.github.io/aria/core-aam/core-aam.html",
+    "ED": "http://w3c.github.io/core-aam/",
     "WD": "http://www.w3.org/TR/core-aam-1.1/",
     "FPWD": "http://www.w3.org/TR/core-aam-1.1/",
     "REC": "http://www.w3.org/TR/wai-aria-implementation/"
   },
   "dpubModURLs": {
-    "ED": "http://w3c.github.io/aria/master/aria/dpub.html",
+    "ED": "http://w3c.github.io/dpub-aria/",
     "FPWD": "http://www.w3.org/TR/dpub-aria-1.0/",
     "WD": "http://www.w3.org/TR/dpub-aria-1.0/",
     "REC": "http://www.w3.org/TR/dpub-aria/"
   },
   "graphicsModURLs": {
-    "ED": "http://w3c.github.io/aria/master/aria/graphics.html",
+    "ED": "http://w3c.github.io/graphics-aria/",
     "FPWD": "http://www.w3.org/TR/graphics-aria-1.0/",
     "WD": "http://www.w3.org/TR/graphics-aria-1.0/",
     "REC": "http://www.w3.org/TR/graphics-aria/"
   },
   "graphicsMappingURLs": {
-    "ED": "http://w3c.github.io/aria/master/graphics-aam/graphics-aam.html",
+    "ED": "http://w3c.github.io/graphics-aam/",
     "FPWD": "http://www.w3.org/TR/graphics-aam-1.0/",
     "WD": "http://www.w3.org/TR/graphics-aam-1.0/",
     "REC": "http://www.w3.org/TR/graphics-aam/"
@@ -613,7 +613,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       "status": "REC",
       "publisher": "W3C",
       "authors": [
-        "Erik DahlstrÃ¶m",
+        "Erik Dahlström",
         "Patrick Dengler",
         "Anthony Grasso",
         "Chris Lilley",
@@ -621,7 +621,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         "Doug Schepers",
         "Jonathan Watt",
         "John Ferraiolo",
-        "è—¤æ²¢ æ·³ (FUJISAWA Jun)",
+        "藤沢 淳 (FUJISAWA Jun)",
         "Dean Jackson"
       ],
       "etAl": true,
@@ -641,7 +641,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         "Amelia Bellamy-Royds",
         "Brian Birtles",
         "Cyril Concolato",
-        "Erik DahlstrÃ¶m",
+        "Erik Dahlström",
         "Chris Lilley",
         "Cameron McCormack",
         "Doug Schepers",
@@ -698,28 +698,24 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   "preProcess": [
     null
   ],
+  "publishDate": "2017-12-05",
   "publishISODate": "2017-12-05T00:00:00.000Z",
   "generatedSubtitle": "Editor's Draft 05 December 2017"
-}</script><meta name="description" content="The Graphics Accessibility API Mappings [GRAPHICS-AAM] defines how
-    user agents map
-    the WAI-ARIA Graphics Module [GRAPHICS-ARIA] markup
-    to platform accessibility APIs.
-    It is intended for user agent developers
-    responsible for accessibility in their user agent so that they can support the accessibility of graphics such as that created for [SVG] or [HTML5]."></head>
-	<body aria-busy="false" class="h-entry"><div class="head">
+}</script></head>
+	<body aria-busy="false" class="h-entry toc-inline"><div class="head">
     <p>
-      <a class="logo" href="https://www.w3.org/"><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C" width="72" height="48"></a>
+      <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: 1415698896;--></p>
+  <p><!--_hyper: -981407545;--></p>
   <h1 class="title p-name" id="title">Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings</h1>
-  <h2 id="w3c-editor-s-draft-05-december-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time class="dt-published" datetime="2017-12-05">05 December 2017</time>&nbsp;<span class="permalink"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 05 December 2017" title="Permalink for W3C Editor's Draft 05 December 2017"><span>Â§</span></a></span></h2>
+  <h2 id="w3c-editor-s-draft-05-december-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time class="dt-published" datetime="2017-12-05">05 December 2017</time>&nbsp;<span class="permalink"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 05 December 2017" title="Permalink for W3C Editor's Draft 05 December 2017"><span>§</span></a></span></h2>
   <dl>
       <dt>This version:</dt>
-      <dd><a class="u-url" href="http://w3c.github.io/aria/graphics-aam/graphics-aam.html">http://w3c.github.io/aria/graphics-aam/graphics-aam.html</a></dd>
+      <dd><a class="u-url" href="http://w3c.github.io/graphics-aam/">http://w3c.github.io/graphics-aam/</a></dd>
       <dt>Latest published version:</dt>
       <dd><a href="https://www.w3.org/TR/graphics-aam-1.0/">https://www.w3.org/TR/graphics-aam-1.0/</a></dd>
       <dt>Latest editor's draft:</dt>
-      <dd><a href="http://w3c.github.io/aria/graphics-aam/graphics-aam.html">http://w3c.github.io/aria/graphics-aam/graphics-aam.html</a></dd>
+      <dd><a href="http://w3c.github.io/graphics-aam/">http://w3c.github.io/graphics-aam/</a></dd>
     <dt>Editors:</dt>
     <dd class="p-author h-card vcard" data-editor-id="75809"><span class="p-name fn">Amelia Bellamy-Royds</span>, <span class="ed_mailto"><a class="u-email email" href="mailto:amelia.bellamy.royds@gmail.com">amelia.bellamy.royds@gmail.com</a></span></dd>
 <dd class="p-author h-card vcard" data-editor-id="73593"><span class="p-name fn">Fred Esch</span>, IBM Corporation, <span class="ed_mailto"><a class="u-email email" href="mailto:fesch@us.ibm.com">fesch@us.ibm.com</a></span></dd>
@@ -773,13 +769,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         <em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current <abbr title="World Wide Web Consortium">W3C</abbr> publications and the latest revision of this technical report can be found in the <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at https://www.w3.org/TR/.</em>
       </p>
          
-			<p>This is an Editor's Draft of Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings 1.0 by the <a href="http://www.w3.org/WAI/PF/svg-a11y-tf/"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force</a>, a joint task force of the <a href="http://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications Working Group</a> and the <a href="http://www.w3.org/Graphics/SVG/WG/"><abbr title="Scalable Vector Graphics">SVG</abbr> Working Group</a>. It provides guidance for mapping roles in <a href="http://w3c.github.io/aria/master/aria/graphics.html" class="graphics"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a> [<cite><a class="bibref" href="#bib-GRAPHICS-ARIA">GRAPHICS-ARIA</a></cite>] to accessibility <abbr title="application programming interfaces">APIs</abbr>, and complements <abbr title="Scalable Vector Graphics">SVG</abbr>-specific mappings in the <a href="" class="svg-mapping"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility <abbr title="application programming interface">API</abbr> Mappings</a> [<cite><a class="bibref" href="#bib-SVG-AAM">SVG-AAM</a></cite>]. It extends <a href="http://w3c.github.io/aria/core-aam/core-aam.html" class="core-mapping">Core Accessibility Mappings 1.1</a> [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>], and is part of a suite of similar technology-specific Accessibility <abbr title="application programming interface">API</abbr> Mappings specifications.</p>
+			<p>This is an Editor's Draft of Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings 1.0 by the <a href="http://www.w3.org/WAI/PF/svg-a11y-tf/"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force</a>, a joint task force of the <a href="http://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications Working Group</a> and the <a href="http://www.w3.org/Graphics/SVG/WG/"><abbr title="Scalable Vector Graphics">SVG</abbr> Working Group</a>. It provides guidance for mapping roles in <a href="http://w3c.github.io/graphics-aria/" class="graphics"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a> [<cite><a class="bibref" href="#bib-GRAPHICS-ARIA">GRAPHICS-ARIA</a></cite>] to accessibility <abbr title="application programming interfaces">APIs</abbr>, and complements <abbr title="Scalable Vector Graphics">SVG</abbr>-specific mappings in the <a href="" class="svg-mapping"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility <abbr title="application programming interface">API</abbr> Mappings</a> [<cite><a class="bibref" href="#bib-SVG-AAM">SVG-AAM</a></cite>]. It extends <a href="http://w3c.github.io/core-aam/" class="core-mapping">Core Accessibility Mappings 1.1</a> [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>], and is part of a suite of similar technology-specific Accessibility <abbr title="application programming interface">API</abbr> Mappings specifications.</p>
 			<p>Feedback on any aspect of the specification is accepted. For this publication, the <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force particularly seeks feedback on the following questions:</p>
 			<ul>
 				<li>Are mappings of graphics features clear and appropriate?</li>
 				<li>Do the platform <abbr title="application programming interface">API</abbr> mappings appropriately reflect the semantics defined for these roles in the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module?</li>
-				<li>Is the relationship of this specification to <a href="http://w3c.github.io/aria/core-aam/core-aam.html" class="core-mapping">Core Accessibility <abbr title="application programming interface">API</abbr> Mappings 1.1</a> clear?</li>
-				<li>Is the relationship of this specification to <a href="http://w3c.github.io/aria/master/aria/graphics.html" class="graphics"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a> and <a href="https://rawgit.com/w3c/aria/master/aria/dpub.html" class="specref"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> 1.1</a> clear?</li>
+				<li>Is the relationship of this specification to <a href="http://w3c.github.io/core-aam/" class="core-mapping">Core Accessibility <abbr title="application programming interface">API</abbr> Mappings 1.1</a> clear?</li>
+				<li>Is the relationship of this specification to <a href="http://w3c.github.io/graphics-aria/" class="graphics"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a> and <a href="https://w3c.github.io/aria/" class="specref"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> 1.1</a> clear?</li>
 			</ul>
 			<p>To comment, <a href="https://github.com/w3c/aria/issues/new">file an issue in the <abbr title="World Wide Web Consortium">W3C</abbr> ARIA GitHub repository</a>, using the "graphics" label in the issue. If this is not feasible, send email to <a href="mailto:public-svg-a11y@w3.org?subject=Graphics%20ARIA%20public%20comment">public-svg-a11y@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-svg-a11y/">comment archive</a>). Comments are requested by <strong>30 September 2016</strong>. In-progress updates to the document may be viewed in the <a href="http://w3c.github.io/aria/graphics-aam/graphics-aam.html">publicly visible editors' draft</a>.</p>
 		
@@ -815,9 +811,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </p>
         
 
-</section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents&nbsp;<span class="permalink"><a href="#undefined" aria-label="Permalink for Table of Contents" title="Permalink for Table of Contents"><span>Â§</span></a></span></h2><ol class="toc"><li class="tocline"><a href="#abstract" class="tocxref">Abstract</a></li><li class="tocline"><a href="#sotd" class="tocxref">Status of This Document</a></li><li class="tocline"><a href="#intro" class="tocxref"><span class="secno">1. </span>Introduction</a></li><li class="tocline"><a href="#conformance" class="tocxref"><span class="secno">2. </span>Conformance</a></li><li class="tocline"><a href="#glossary" class="tocxref"><span class="secno">3. </span>Important Terms</a></li><li class="tocline"><a href="#mapping" class="tocxref"><span class="secno">4. </span>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a href="#mapping_general" class="tocxref"><span class="secno">4.1 </span>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a></li></ol></li><li class="tocline"><a href="#mapping_conflicts" class="tocxref"><span class="secno">5. </span>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a href="#mapping_nodirect" class="tocxref"><span class="secno">6. </span>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a></li><li class="tocline"><a href="#mapping_role" class="tocxref"><span class="secno">7. </span>Role mapping</a><ol class="toc"><li class="tocline"><a href="#roleMappingGeneralRules" class="tocxref"><span class="secno">7.1 </span>General Rules</a></li><li class="tocline"><a href="#mapping_role_table" class="tocxref"><span class="secno">7.2 </span>Role Mapping Table</a></li></ol></li><li class="tocline"><a href="#appendices" class="tocxref"><span class="secno">A. </span>Appendices</a><ol class="toc"><li class="tocline"><a href="#appendices_references" class="tocxref"><span class="secno">A.1 </span>References</a></li><li class="tocline"><a href="#acknowledgements" class="tocxref"><span class="secno">A.2 </span>Acknowledgments</a><ol class="toc"><li class="tocline"><a href="#ack_group" class="tocxref"><span class="secno">A.2.1 </span>Participants active in the ARIA WG at the time of publication</a></li><li class="tocline"><a href="#ack_others" class="tocxref"><span class="secno">A.2.2 </span>Other ARIA contributors, commenters, and previously active participants</a></li><li class="tocline"><a href="#ack_funders" class="tocxref"><span class="secno">A.2.3 </span>Enabling funders</a></li></ol></li></ol></li><li class="tocline"><a href="#references" class="tocxref"><span class="secno">B. </span>References</a><ol class="toc"><li class="tocline"><a href="#normative-references" class="tocxref"><span class="secno">B.1 </span>Normative references</a></li><li class="tocline"><a href="#informative-references" class="tocxref"><span class="secno">B.2 </span>Informative references</a></li></ol></li></ol></nav>
+</section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents&nbsp;<span class="permalink"><a href="#undefined" aria-label="Permalink for Table of Contents" title="Permalink for Table of Contents"><span>§</span></a></span></h2><ol class="toc"><li class="tocline"><a href="#abstract" class="tocxref">Abstract</a></li><li class="tocline"><a href="#sotd" class="tocxref">Status of This Document</a></li><li class="tocline"><a href="#intro" class="tocxref"><span class="secno">1. </span>Introduction</a></li><li class="tocline"><a href="#conformance" class="tocxref"><span class="secno">2. </span>Conformance</a></li><li class="tocline"><a href="#glossary" class="tocxref"><span class="secno">3. </span>Important Terms</a></li><li class="tocline"><a href="#mapping" class="tocxref"><span class="secno">4. </span>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a href="#mapping_general" class="tocxref"><span class="secno">4.1 </span>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a></li></ol></li><li class="tocline"><a href="#mapping_conflicts" class="tocxref"><span class="secno">5. </span>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a href="#mapping_nodirect" class="tocxref"><span class="secno">6. </span>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a></li><li class="tocline"><a href="#mapping_role" class="tocxref"><span class="secno">7. </span>Role mapping</a><ol class="toc"><li class="tocline"><a href="#roleMappingGeneralRules" class="tocxref"><span class="secno">7.1 </span>General Rules</a></li><li class="tocline"><a href="#mapping_role_table" class="tocxref"><span class="secno">7.2 </span>Role Mapping Table</a></li></ol></li><li class="tocline"><a href="#appendices" class="tocxref"><span class="secno">A. </span>Appendices</a><ol class="toc"><li class="tocline"><a href="#appendices_references" class="tocxref"><span class="secno">A.1 </span>References</a></li><li class="tocline"><a href="#acknowledgements" class="tocxref"><span class="secno">A.2 </span>Acknowledgments</a><ol class="toc"><li class="tocline"><a href="#ack_group" class="tocxref"><span class="secno">A.2.1 </span>Participants active in the ARIA WG at the time of publication</a></li><li class="tocline"><a href="#ack_others" class="tocxref"><span class="secno">A.2.2 </span>Other ARIA contributors, commenters, and previously active participants</a></li><li class="tocline"><a href="#ack_funders" class="tocxref"><span class="secno">A.2.3 </span>Enabling funders</a></li></ol></li></ol></li><li class="tocline"><a href="#references" class="tocxref"><span class="secno">B. </span>References</a><ol class="toc"><li class="tocline"><a href="#normative-references" class="tocxref"><span class="secno">B.1 </span>Normative references</a></li><li class="tocline"><a href="#informative-references" class="tocxref"><span class="secno">B.2 </span>Informative references</a></li></ol></li></ol></nav>
 		<section id="intro" class="informative">
-			<!--OddPage--><h2 id="x1-introduction"><span class="secno">1. </span>Introduction&nbsp;<span class="permalink"><a href="#intro" aria-label="Permalink for 1. Introduction" title="Permalink for 1. Introduction"><span>Â§</span></a></span></h2><p><em>This section is non-normative.</em></p>
+			<!--OddPage--><h2 id="x1-introduction"><span class="secno">1. </span>Introduction&nbsp;<span class="permalink"><a href="#intro" aria-label="Permalink for 1. Introduction" title="Permalink for 1. Introduction"><span>§</span></a></span></h2><p><em>This section is non-normative.</em></p>
 			<p>The Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings specification provides role mappings 
     for the roles in the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module  [<cite><a class="bibref" href="#bib-GRAPHICS-ARIA">GRAPHICS-ARIA</a></cite>].
    			</p>
@@ -895,7 +891,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </ul>
 			
 		</section>
-		<section id="conformance" class="normative"><!--OddPage--><h2 id="x2-conformance"><span class="secno">2. </span>Conformance&nbsp;<span class="permalink"><a href="#conformance" aria-label="Permalink for 2. Conformance" title="Permalink for 2. Conformance"><span>Â§</span></a></span></h2>
+		<section id="conformance" class="normative"><!--OddPage--><h2 id="x2-conformance"><span class="secno">2. </span>Conformance&nbsp;<span class="permalink"><a href="#conformance" aria-label="Permalink for 2. Conformance" title="Permalink for 2. Conformance"><span>§</span></a></span></h2>
 <p>
   As well as sections marked as non-normative, all authoring guidelines, diagrams, examples,
   and notes in this specification are non-normative. Everything else in this specification is
@@ -911,7 +907,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 			<p>Informative sections provide information useful to understanding the specification. Such sections may contain examples of recommended practice, but it is not required to follow such recommendations in order to conform to this specification.</p>
 		</section>
 		<section id="glossary">
-			<!--OddPage--><h2 id="x3-important-terms"><span class="secno">3. </span>Important Terms&nbsp;<span class="permalink"><a href="#glossary" aria-label="Permalink for 3. Important Terms" title="Permalink for 3. Important Terms"><span>Â§</span></a></span></h2>
+			<!--OddPage--><h2 id="x3-important-terms"><span class="secno">3. </span>Important Terms&nbsp;<span class="permalink"><a href="#glossary" aria-label="Permalink for 3. Important Terms" title="Permalink for 3. Important Terms"><span>§</span></a></span></h2>
 			<div data-oninclude="restrictReferences"><p>While some terms are defined in place, the following definitions are used throughout this document. </p>
 <dl class="termlist">
     <dt><dfn data-lt="accessibility api|accessibility apis" id="dfn-accessibility-api" data-dfn-type="dfn">Accessibility <abbr title="Application Programming Interface">API</abbr></dfn></dt>
@@ -1041,29 +1037,29 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </div>
 		</section>
 		<section id="mapping">
-			<!--OddPage--><h2 id="x4-mapping-wai-aria-to-accessibility-apis"><span class="secno">4. </span>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr>&nbsp;<span class="permalink"><a href="#mapping" aria-label="Permalink for 4. Mapping WAI-ARIA to Accessibility APIs" title="Permalink for 4. Mapping WAI-ARIA to Accessibility APIs"><span>Â§</span></a></span></h2>
+			<!--OddPage--><h2 id="x4-mapping-wai-aria-to-accessibility-apis"><span class="secno">4. </span>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr>&nbsp;<span class="permalink"><a href="#mapping" aria-label="Permalink for 4. Mapping WAI-ARIA to Accessibility APIs" title="Permalink for 4. Mapping WAI-ARIA to Accessibility APIs"><span>§</span></a></span></h2>
 			<section id="mapping_general">
-				<h3 id="x4-1-general-rules-for-exposing-wai-aria-semantics"><span class="secno">4.1 </span>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics&nbsp;<span class="permalink"><a href="#mapping_general" aria-label="Permalink for 4.1 General rules for exposing WAI-ARIA semantics" title="Permalink for 4.1 General rules for exposing WAI-ARIA semantics"><span>Â§</span></a></span></h3>
-				<p>This section <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="http://w3c.github.io/aria/core-aam/core-aam.html#mapping_general">General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a> in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>].</p>
+				<h3 id="x4-1-general-rules-for-exposing-wai-aria-semantics"><span class="secno">4.1 </span>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics&nbsp;<span class="permalink"><a href="#mapping_general" aria-label="Permalink for 4.1 General rules for exposing WAI-ARIA semantics" title="Permalink for 4.1 General rules for exposing WAI-ARIA semantics"><span>§</span></a></span></h3>
+				<p>This section <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="http://w3c.github.io/core-aam/#mapping_general">General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a> in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>].</p>
 			</section>
 		</section>
 		<section id="mapping_conflicts">
-			<!--OddPage--><h2 id="x5-conflicts-between-native-markup-semantics-and-wai-aria"><span class="secno">5. </span>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>&nbsp;<span class="permalink"><a href="#mapping_conflicts" aria-label="Permalink for 5. Conflicts between native markup semantics and WAI-ARIA" title="Permalink for 5. Conflicts between native markup semantics and WAI-ARIA"><span>Â§</span></a></span></h2>
-			<p>User agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="http://w3c.github.io/aria/core-aam/core-aam.html#mapping_conflicts">Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a> in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>]. </p>
+			<!--OddPage--><h2 id="x5-conflicts-between-native-markup-semantics-and-wai-aria"><span class="secno">5. </span>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>&nbsp;<span class="permalink"><a href="#mapping_conflicts" aria-label="Permalink for 5. Conflicts between native markup semantics and WAI-ARIA" title="Permalink for 5. Conflicts between native markup semantics and WAI-ARIA"><span>§</span></a></span></h2>
+			<p>User agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="http://w3c.github.io/core-aam/#mapping_conflicts">Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a> in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>]. </p>
 		</section>
 		<section id="mapping_nodirect">
-			<!--OddPage--><h2 id="x6-exposing-attributes-that-do-not-directly-map-to-accessibility-api-properties"><span class="secno">6. </span>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties&nbsp;<span class="permalink"><a href="#mapping_nodirect" aria-label="Permalink for 6. Exposing attributes that do not directly map to accessibility API properties" title="Permalink for 6. Exposing attributes that do not directly map to accessibility API properties"><span>Â§</span></a></span></h2>
-			<p>User agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="http://w3c.github.io/aria/core-aam/core-aam.html#mapping_nodirect">Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a> in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>].</p>
+			<!--OddPage--><h2 id="x6-exposing-attributes-that-do-not-directly-map-to-accessibility-api-properties"><span class="secno">6. </span>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties&nbsp;<span class="permalink"><a href="#mapping_nodirect" aria-label="Permalink for 6. Exposing attributes that do not directly map to accessibility API properties" title="Permalink for 6. Exposing attributes that do not directly map to accessibility API properties"><span>§</span></a></span></h2>
+			<p>User agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="http://w3c.github.io/core-aam/#mapping_nodirect">Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a> in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>].</p>
 		</section>
 		<section id="mapping_role">
-			<!--OddPage--><h2 id="x7-role-mapping"><span class="secno">7. </span>Role mapping&nbsp;<span class="permalink"><a href="#mapping_role" aria-label="Permalink for 7. Role mapping" title="Permalink for 7. Role mapping"><span>Â§</span></a></span></h2>
+			<!--OddPage--><h2 id="x7-role-mapping"><span class="secno">7. </span>Role mapping&nbsp;<span class="permalink"><a href="#mapping_role" aria-label="Permalink for 7. Role mapping" title="Permalink for 7. Role mapping"><span>§</span></a></span></h2>
 			<p>Platform <a class="termref internalDFN" href="#dfn-accessibility-api" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a> traditionally have had a finite set of predefined <a class="termref internalDFN" href="#dfn-role" data-link-type="dfn">roles</a> that are expected by <a class="termref internalDFN" href="#dfn-assistive-technology" data-link-type="dfn">assistive technologies</a> on that platform and only one or two roles may be exposed. In contrast, <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> allows multiple roles to be specified as an ordered set of space-separated valid role tokens. The additional roles are fallback roles similar to the concept of specifying multiple fonts in case the first choice font type is not supported.</p>
 			<section id="roleMappingGeneralRules">
-				<h3 id="x7-1-general-rules"><span class="secno">7.1 </span>General Rules&nbsp;<span class="permalink"><a href="#roleMappingGeneralRules" aria-label="Permalink for 7.1 General Rules" title="Permalink for 7.1 General Rules"><span>Â§</span></a></span></h3>
-				<p>User agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to the Role Mapping <a class="core-mapping" href="http://w3c.github.io/aria/core-aam/core-aam.html#roleMappingGeneralRules">General Rules</a> accessibility <abbr title="application programming interface">API</abbr> computational requirements in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>].</p>
+				<h3 id="x7-1-general-rules"><span class="secno">7.1 </span>General Rules&nbsp;<span class="permalink"><a href="#roleMappingGeneralRules" aria-label="Permalink for 7.1 General Rules" title="Permalink for 7.1 General Rules"><span>§</span></a></span></h3>
+				<p>User agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to the Role Mapping <a class="core-mapping" href="http://w3c.github.io/core-aam/#roleMappingGeneralRules">General Rules</a> accessibility <abbr title="application programming interface">API</abbr> computational requirements in [<cite><a class="bibref" href="#bib-CORE-AAM">CORE-AAM</a></cite>].</p>
 			</section>
 			<section id="mapping_role_table">
-				<h3 id="x7-2-role-mapping-table"><span class="secno">7.2 </span>Role Mapping Table&nbsp;<span class="permalink"><a href="#mapping_role_table" aria-label="Permalink for 7.2 Role Mapping Table" title="Permalink for 7.2 Role Mapping Table"><span>Â§</span></a></span></h3>
+				<h3 id="x7-2-role-mapping-table"><span class="secno">7.2 </span>Role Mapping Table&nbsp;<span class="permalink"><a href="#mapping_role_table" aria-label="Permalink for 7.2 Role Mapping Table" title="Permalink for 7.2 Role Mapping Table"><span>§</span></a></span></h3>
 				<p> This section defines how roles in digital publishing map to platform accessibility <abbr title="application programming interfaces">APIs</abbr> based on their native host language semantics and when <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> roles are applied. This section refers directly to the Core Accessibility <abbr title="application programming interface">API</abbr> Mappings specification. </p>
 				<div class="table-container" style="display: none;">
 					<table class="map-table elements" id="role-mapping-table">
@@ -1079,7 +1075,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 						</thead>
 						<tbody>
                                                         <tr>
-                                                                <th><a class="graphics-role-reference" href="http://w3c.github.io/aria/master/aria/graphics.html#graphics-document"><code>graphics-document</code></a></th> 
+                                                                <th><a class="graphics-role-reference" href="http://w3c.github.io/graphics-aria/#graphics-document"><code>graphics-document</code></a></th> 
 
                                                                 <td><p><code>ROLE_SYSTEM_DOCUMENT</code> + <code>STATE_SYSTEM_READONLY</code></p><p>IAccessible2: Object attribute <code>xml-roles:graphics-document</code>. </p></td>
                                                                 <td>Control Type: <code>'Document'</code>.</td>
@@ -1090,7 +1086,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                                                                 </td>
                                                         </tr>
                                                        <tr>
-                                                                <th><a class="graphics-role-reference" href="http://w3c.github.io/aria/master/aria/graphics.html#graphics-object"><code>graphics-object</code></a></th>
+                                                                <th><a class="graphics-role-reference" href="http://w3c.github.io/graphics-aria/#graphics-object"><code>graphics-object</code></a></th>
                                                                 <td><code>ROLE_SYSTEM_GROUPING</code> + <p>IAccessible2: Object attribute <code>xml-roles:graphics-object</code>.</p></td>
                                                                 <td>Control Type: <code>'Group'</code>.</td>
                                                                 <td><p>Expose <code>ROLE_PANEL</code> and object attribute <code>xml-roles:graphics-object</code>.</p></td>
@@ -1100,7 +1096,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                                                                 </td>
                                                         </tr>
 							<tr>
-                                                                <th><a class="graphics-role-reference" href="http://w3c.github.io/aria/master/aria/graphics.html#graphics-symbol"><code>graphics-symbol</code></a></th>
+                                                                <th><a class="graphics-role-reference" href="http://w3c.github.io/graphics-aria/#graphics-symbol"><code>graphics-symbol</code></a></th>
                                                                 <td><code>ROLE_SYSTEM_GRAPHIC</code><p>IAccessible2: Object attribute <code>xml-roles:graphics-symbol</code>. </p></td>
                                                                 <td>Control Type: <code>'Image'</code>.</td>
                                                                 <td><p>Expose <code>ROLE_IMAGE</code> and object attribute <code>xml-roles:graphics-symbol</code>. </p></td>
@@ -1115,17 +1111,17 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 			</section>
 		</section>
 		<section id="appendices" class="appendix">
-			<!--OddPage--><h2 id="a-appendices"><span class="secno">A. </span>Appendices&nbsp;<span class="permalink"><a href="#appendices" aria-label="Permalink for A. Appendices" title="Permalink for A. Appendices"><span>Â§</span></a></span></h2>
+			<!--OddPage--><h2 id="a-appendices"><span class="secno">A. </span>Appendices&nbsp;<span class="permalink"><a href="#appendices" aria-label="Permalink for A. Appendices" title="Permalink for A. Appendices"><span>§</span></a></span></h2>
 			<section id="appendices_references">
-				<h3 id="a-1-references"><span class="secno">A.1 </span>References&nbsp;<span class="permalink"><a href="#appendices_references" aria-label="Permalink for A.1 References" title="Permalink for A.1 References"><span>Â§</span></a></span></h3>
+				<h3 id="a-1-references"><span class="secno">A.1 </span>References&nbsp;<span class="permalink"><a href="#appendices_references" aria-label="Permalink for A.1 References" title="Permalink for A.1 References"><span>§</span></a></span></h3>
 				<p>This section is <a class="termref internalDFN" href="#dfn-informative" data-link-type="dfn">informative</a>.</p>
 				<p>Placeholder for references</p>
 			</section>
 			<section class="appendix informative section" id="acknowledgements">
-	<h3 id="a-2-acknowledgments"><span class="secno">A.2 </span>Acknowledgments&nbsp;<span class="permalink"><a href="#acknowledgements" aria-label="Permalink for A.2 Acknowledgments" title="Permalink for A.2 Acknowledgments"><span>Â§</span></a></span></h3><p><em>This section is non-normative.</em></p>
+	<h3 id="a-2-acknowledgments"><span class="secno">A.2 </span>Acknowledgments&nbsp;<span class="permalink"><a href="#acknowledgements" aria-label="Permalink for A.2 Acknowledgments" title="Permalink for A.2 Acknowledgments"><span>§</span></a></span></h3><p><em>This section is non-normative.</em></p>
 	<p>The following people contributed to the development of this document.</p>
 	<section class="section" id="ack_group">
-		<h4 id="a-2-1-participants-active-in-the-aria-wg-at-the-time-of-publication"><span class="secno">A.2.1 </span>Participants active in the ARIA WG at the time of publication&nbsp;<span class="permalink"><a href="#ack_group" aria-label="Permalink for A.2.1 Participants active in the ARIA WG at the time of publication" title="Permalink for A.2.1 Participants active in the ARIA WG at the time of publication"><span>Â§</span></a></span></h4>
+		<h4 id="a-2-1-participants-active-in-the-aria-wg-at-the-time-of-publication"><span class="secno">A.2.1 </span>Participants active in the ARIA WG at the time of publication&nbsp;<span class="permalink"><a href="#ack_group" aria-label="Permalink for A.2.1 Participants active in the ARIA WG at the time of publication" title="Permalink for A.2.1 Participants active in the ARIA WG at the time of publication"><span>§</span></a></span></h4>
 		<ul>
 			<li>Ann Abbott (IBM Corporation)</li>
 			<li>Michiel Bijl (The Paciello Group)</li>
@@ -1170,7 +1166,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 		</ul>
   </section>
 	<section class="section" id="ack_others">
-		<h4 id="a-2-2-other-aria-contributors-commenters-and-previously-active-participants"><span class="secno">A.2.2 </span>Other ARIA contributors, commenters, and previously active participants&nbsp;<span class="permalink"><a href="#ack_others" aria-label="Permalink for A.2.2 Other ARIA contributors, commenters, and previously active participants" title="Permalink for A.2.2 Other ARIA contributors, commenters, and previously active participants"><span>Â§</span></a></span></h4>
+		<h4 id="a-2-2-other-aria-contributors-commenters-and-previously-active-participants"><span class="secno">A.2.2 </span>Other ARIA contributors, commenters, and previously active participants&nbsp;<span class="permalink"><a href="#ack_others" aria-label="Permalink for A.2.2 Other ARIA contributors, commenters, and previously active participants" title="Permalink for A.2.2 Other ARIA contributors, commenters, and previously active participants"><span>§</span></a></span></h4>
 		<ul>
 			<li>Shadi Abou-Zahra (<abbr title="World Wide Web Consortium">W3C</abbr>)</li>
 			<li>Jim Allan (TSB)</li>
@@ -1300,7 +1296,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 		</ul>
 	</section>
 	<section class="section" id="ack_funders">
-		<h4 id="a-2-3-enabling-funders"><span class="secno">A.2.3 </span>Enabling funders&nbsp;<span class="permalink"><a href="#ack_funders" aria-label="Permalink for A.2.3 Enabling funders" title="Permalink for A.2.3 Enabling funders"><span>Â§</span></a></span></h4>
+		<h4 id="a-2-3-enabling-funders"><span class="secno">A.2.3 </span>Enabling funders&nbsp;<span class="permalink"><a href="#ack_funders" aria-label="Permalink for A.2.3 Enabling funders" title="Permalink for A.2.3 Enabling funders"><span>§</span></a></span></h4>
 		<p>This publication has been funded in part with U.S. Federal funds from the Department of Education, National Institute on Disability, Independent Living, and Rehabilitation Research (NIDILRR), initially under contract number ED-OSE-10-C-0067 and currently under contract number HHSP23301500054C. The content of this publication does not necessarily reflect the views or policies of the U.S. Department of Education, nor does mention of trade names, commercial products, or organizations imply endorsement by the U.S. Government.</p>
 	</section>
 </section>
@@ -1308,13 +1304,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 		</section>
 	
 
-<section id="references" class="appendix"><!--OddPage--><h2 id="b-references"><span class="secno">B. </span>References&nbsp;<span class="permalink"><a href="#references" aria-label="Permalink for B. References" title="Permalink for B. References"><span>Â§</span></a></span></h2><section id="normative-references"><h3 id="b-1-normative-references"><span class="secno">B.1 </span>Normative references&nbsp;<span class="permalink"><a href="#normative-references" aria-label="Permalink for B.1 Normative references" title="Permalink for B.1 Normative references"><span>Â§</span></a></span></h3><dl class="bibliography"><dt id="bib-CORE-AAM">[CORE-AAM]</dt><dd><a href="http://www.w3.org/TR/core-aam-1.1/"><cite>Core Accessibility API Mappings 1.1</cite></a>. Joseph Scheuhammer; Michael Cooper; Andi Snow-Weaver; Aaron Leventhal et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/core-aam-1.1/">http://www.w3.org/TR/core-aam-1.1/</a>
+<section id="references" class="appendix"><!--OddPage--><h2 id="b-references"><span class="secno">B. </span>References&nbsp;<span class="permalink"><a href="#references" aria-label="Permalink for B. References" title="Permalink for B. References"><span>§</span></a></span></h2><section id="normative-references"><h3 id="b-1-normative-references"><span class="secno">B.1 </span>Normative references&nbsp;<span class="permalink"><a href="#normative-references" aria-label="Permalink for B.1 Normative references" title="Permalink for B.1 Normative references"><span>§</span></a></span></h3><dl class="bibliography"><dt id="bib-CORE-AAM">[CORE-AAM]</dt><dd><a href="http://www.w3.org/TR/core-aam-1.1/"><cite>Core Accessibility API Mappings 1.1</cite></a>. Joseph Scheuhammer; Michael Cooper; Andi Snow-Weaver; Aaron Leventhal et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/core-aam-1.1/">http://www.w3.org/TR/core-aam-1.1/</a>
 </dd><dt id="bib-GRAPHICS-AAM">[GRAPHICS-AAM]</dt><dd><a href="http://www.w3.org/TR/graphics-aam-1.0/"><cite>Graphics Accessibility API Mappings</cite></a>. Amelia Bellamy-Royds; Fred Esch; Richard Schwerdtfeger et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/graphics-aam-1.0/">http://www.w3.org/TR/graphics-aam-1.0/</a>
 </dd><dt id="bib-GRAPHICS-ARIA">[GRAPHICS-ARIA]</dt><dd><a href="http://www.w3.org/TR/graphics-aria-1.0/"><cite>WAI-ARIA Graphics</cite></a>. Amelia Bellamy-Royds; Fred Esch; Rich Schwerdtfeger; Leonie Watson et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/graphics-aria-1.0/">http://www.w3.org/TR/graphics-aria-1.0/</a>
 </dd><dt id="bib-HTML5">[HTML5]</dt><dd><a href="https://www.w3.org/TR/html5/"><cite>HTML5</cite></a>. Ian Hickson; Robin Berjon; Steve Faulkner; Travis Leithead; Erika Doyle Navara; Theresa O'Connor; Silvia Pfeiffer. W3C. 28 October 2014. W3C Recommendation. URL: <a href="https://www.w3.org/TR/html5/">https://www.w3.org/TR/html5/</a>
 </dd><dt id="bib-RFC2119">[RFC2119]</dt><dd><a href="https://tools.ietf.org/html/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner. IETF. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
 </dd><dt id="bib-SVG">[SVG]</dt><dd><a href="https://www.w3.org/TR/SVG/"><cite>Scalable Vector Graphics (SVG) 1.0 Specification</cite></a>. Jon Ferraiolo. W3C. 4 September 2001. W3C Recommendation. URL: <a href="https://www.w3.org/TR/SVG/">https://www.w3.org/TR/SVG/</a>
-</dd></dl></section><section id="informative-references"><h3 id="b-2-informative-references"><span class="secno">B.2 </span>Informative references&nbsp;<span class="permalink"><a href="#informative-references" aria-label="Permalink for B.2 Informative references" title="Permalink for B.2 Informative references"><span>Â§</span></a></span></h3><dl class="bibliography"><dt id="bib-ACCNAME-AAM">[ACCNAME-AAM]</dt><dd><a href="http://www.w3.org/TR/accname-aam-1.1/"><cite>Accessible Name and Description: Computation and API Mappings 1.1</cite></a>. Joseph Scheuhammer; Michael Cooper; Andi Snow-Weaver; Aaron Leventhal et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/accname-aam-1.1/">http://www.w3.org/TR/accname-aam-1.1/</a>
+</dd></dl></section><section id="informative-references"><h3 id="b-2-informative-references"><span class="secno">B.2 </span>Informative references&nbsp;<span class="permalink"><a href="#informative-references" aria-label="Permalink for B.2 Informative references" title="Permalink for B.2 Informative references"><span>§</span></a></span></h3><dl class="bibliography"><dt id="bib-ACCNAME-AAM">[ACCNAME-AAM]</dt><dd><a href="http://www.w3.org/TR/accname-aam-1.1/"><cite>Accessible Name and Description: Computation and API Mappings 1.1</cite></a>. Joseph Scheuhammer; Michael Cooper; Andi Snow-Weaver; Aaron Leventhal et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/accname-aam-1.1/">http://www.w3.org/TR/accname-aam-1.1/</a>
 </dd><dt id="bib-ARIA-PRACTICES">[ARIA-PRACTICES]</dt><dd><a href="http://www.w3.org/TR/wai-aria-practices-1.1/"><cite>WAI-ARIA Authoring Practicess 1.1</cite></a>. Matt King; James Nurthen; Michael Cooper; Michiel Bijl; Joseph Scheuhammer; Lisa Pappas; Richard Schwerdtfeger et al. W3C. W3C Working Draft. URL: <a href="http://www.w3.org/TR/wai-aria-practices-1.1/">http://www.w3.org/TR/wai-aria-practices-1.1/</a>
 </dd><dt id="bib-AT-SPI">[AT-SPI]</dt><dd><a href="https://developer.gnome.org/libatspi/stable/"><cite>Assistive Technology Service Provider Interface</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/libatspi/stable/">https://developer.gnome.org/libatspi/stable/</a>
 </dd><dt id="bib-ATK">[ATK]</dt><dd><a href="https://developer.gnome.org/atk/stable/"><cite>ATK - Accessibility Toolkit</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/atk/stable/">https://developer.gnome.org/atk/stable/</a>
