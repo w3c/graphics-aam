@@ -1,39 +1,35 @@
 var biblio = {
-
+	
 	"ACCNAME-AAM": {
 		"title": "Accessible Name and Description: Computation and API Mappings 1.1",
 		"href": "http://www.w3.org/TR/accname-aam-1.1/",
 		"status": "WD",
 		"publisher": "W3C",
-		"authors":  [
-			"Joseph Scheuhammer",
-			"Michael Cooper",
-			"Andi Snow-Weaver",
-			"Aaron Leventhal"
-		],
+		"authors":[
+		"Joseph Scheuhammer",
+		"Michael Cooper",
+		"Andi Snow-Weaver",
+		"Aaron Leventhal"],
 		"etAl": true,
-		"deliveredBy":  [
-			"http://www.w3.org/WAI/ARIA/"
-		]
+		"deliveredBy":[
+		"http://www.w3.org/WAI/ARIA/"]
 	},
 	"ARIA-PRACTICES": {
 		"title": "WAI-ARIA Authoring Practicess 1.1",
 		"href": "http://www.w3.org/TR/wai-aria-practices-1.1/",
 		"status": "WD",
 		"publisher": "W3C",
-		"authors": [
-			"Matt King",
-			"James Nurthen",
-			"Michael Cooper",
-			"Michiel Bijl",
-			"Joseph Scheuhammer",
-			"Lisa Pappas",
-			"Richard Schwerdtfeger"
-		],
+		"authors":[
+		"Matt King",
+		"James Nurthen",
+		"Michael Cooper",
+		"Michiel Bijl",
+		"Joseph Scheuhammer",
+		"Lisa Pappas",
+		"Richard Schwerdtfeger"],
 		"etAl": true,
-		"deliveredBy": [
-			"http://www.w3.org/WAI/ARIA/"
-		]
+		"deliveredBy":[
+		"http://www.w3.org/WAI/ARIA/"]
 	},
 	// Correct reference for ATK
 	"ATK": {
@@ -52,73 +48,78 @@ var biblio = {
 		"href": "http://www.w3.org/TR/core-aam-1.1/",
 		"status": "WD",
 		"publisher": "W3C",
-		"authors": [
-			"Joseph Scheuhammer",
-			"Michael Cooper",
-			"Andi Snow-Weaver",
-			"Aaron Leventhal"
-		],
+		"authors":[
+		"Joseph Scheuhammer",
+		"Michael Cooper",
+		"Andi Snow-Weaver",
+		"Aaron Leventhal"],
 		"etAl": true,
-		"deliveredBy": [
-			"http://www.w3.org/WAI/ARIA/"
-		]
+		"deliveredBy":[
+		"http://www.w3.org/WAI/ARIA/"]
 	},
-        "DPUB-ARIA": {
-                "title": "Digital Publishing WAI-ARIA Module 1.0",
-                "href": "http://www.w3.org/TR/dpub-aria-1.0/",
-                "status": "WD",
-                "publisher": "W3C",
-                "authors": [
-                        "Matt Garrish",
-                        "Tzviya Siegman",
-                        "Markus Gylling",
-                        "Shane McCarron"
-                ],
-                "etAl": true,
-                "deliveredBy": [
-                        "http://www.w3.org/WAI/ARIA/"
-                ]
-        },
-        "GRAPHICS-ARIA": {
-                "title": "WAI-ARIA Graphics",
-                "href": "http://www.w3.org/TR/graphics-aria-1.0/",
-                "status": "WD",
-                "publisher": "W3C",
-                "authors": [
-                        "Amelia Bellamy-Royds",
-                        "Fred Esch",
-                        "Rich Schwerdtfeger",
-                        "Leonie Watson"
-                ],
-                "etAl": true,
-                "deliveredBy": [
-                        "http://www.w3.org/WAI/ARIA/",
-                        "http://www.w3.org/SVG/"
-                ]
-        },
-        "GRAPHICS-AAM": {
-                "title": "Graphics Accessibility API Mappings",
-                "href": "http://www.w3.org/TR/graphics-aam-1.0/",
-                "status": "WD",
-                "publisher": "W3C",
-                "authors": [
-                        "Amelia Bellamy-Royds",
-                        "Fred Esch",
-                        "Richard Schwerdtfeger"
-                ],
-                "etAl": true,
-                "deliveredBy": [
-                        "http://www.w3.org/WAI/ARIA/",
-                        "http://www.w3.org/SVG/"
-                ]
-        },
-
+	"DPUB-ARIA": {
+		"title": "Digital Publishing WAI-ARIA Module 1.0",
+		"href": "http://www.w3.org/TR/dpub-aria-1.0/",
+		"status": "WD",
+		"publisher": "W3C",
+		"authors":[
+		"Matt Garrish",
+		"Tzviya Siegman",
+		"Markus Gylling",
+		"Shane McCarron"],
+		"etAl": true,
+		"deliveredBy":[
+		"http://www.w3.org/WAI/ARIA/"]
+	},
+	"GRAPHICS-ARIA": {
+		"title": "WAI-ARIA Graphics",
+		"href": "http://www.w3.org/TR/graphics-aria-1.0/",
+		"status": "WD",
+		"publisher": "W3C",
+		"authors":[
+		"Amelia Bellamy-Royds",
+		"Fred Esch",
+		"Rich Schwerdtfeger",
+		"Leonie Watson"],
+		"etAl": true,
+		"deliveredBy":[
+		"http://www.w3.org/WAI/ARIA/",
+		"http://www.w3.org/SVG/"]
+	},
+	"GRAPHICS-AAM": {
+		"title": "Graphics Accessibility API Mappings",
+		"href": "http://www.w3.org/TR/graphics-aam-1.0/",
+		"status": "WD",
+		"publisher": "W3C",
+		"authors":[
+		"Amelia Bellamy-Royds",
+		"Fred Esch",
+		"Richard Schwerdtfeger"],
+		"etAl": true,
+		"deliveredBy":[
+		"http://www.w3.org/WAI/ARIA/",
+		"http://www.w3.org/SVG/"]
+	},
+	"GRAPHICS-ARIA-1.0": {
+		"authors":[ "Amelia Bellamy-Royds", "Fred Esch", "Richard Schwerdtfeger", "Léonie Watson"], "href": "https://www.w3.org/TR/graphics-aria-1.0/", "title": "WAI-ARIA Graphics Module", "status": "WD", "publisher": "W3C", "edDraft": "https://w3c.github.io/graphics-aria/", "deliveredBy":[ {
+			"url": "https://www.w3.org/Graphics/SVG/WG/", "shortname": "svg"
+		}, {
+			"url": "https://www.w3.org/WAI/ARIA/", "shortname": "wai_aria"
+		}], "versions":[ "graphics-aria-1.0-20160908", "graphics-aria-1.0-20151203"], "repository": "https://github.com/w3c/aria", "id": "graphics-aria-1.0", "date": "2 February 2018"
+	},
+	"GRAPHICS-AAM-1.0": {
+		"authors":[ "Richard Schwerdtfeger", "Doug Schepers", "Fred Esch", "Amelia Bellamy-Royds"], "href": "https://www.w3.org/TR/graphics-aam-1.0/", "title": "Graphics Accessibility API Mappings", "status": "WD", "publisher": "W3C", "edDraft": "https://w3c.github.io/aria/graphics-aam/graphics-aam.html", "deliveredBy":[ {
+			"url": "https://www.w3.org/Graphics/SVG/WG/", "shortname": "svg"
+		}, {
+			"url": "https://www.w3.org/WAI/ARIA/", "shortname": "wai_aria"
+		}], "versions":[ "graphics-aam-1.0-20160908"], "repository": "https://github.com/w3c/aria", "id": "graphics-aam-1.0", "date": "2 February 2018"
+	},
 	"EPUB-SSV": {
 		"href": "http://www.idpf.org/epub/vocab/structure/",
 		"title": "EPUB Structural Semantics Vocabulary",
 		"publisher": "IDPF"
 	},
-
+	
 	"EPUB-Content": {
 		"href": "http://www.idpf.org/epub/31/spec/epub-contentdocs.html",
 		"title": "EPUB Content Documents 3.1",
@@ -131,21 +132,19 @@ var biblio = {
 		"publisher": "The GNOME Project"
 	},
 	"HTML-AAM": {
-		"authors": [
-			"Steve Faulkner",
-			"Jason Kiss",
-			"Cynthia Shelly",
-			"Alexander Surkov"
-		],
+		"authors":[
+		"Steve Faulkner",
+		"Jason Kiss",
+		"Cynthia Shelly",
+		"Alexander Surkov"],
 		"etAl": true,
 		"href": "http://www.w3.org/TR/html-aam-1.0/",
 		"title": "HTML Accessibility API Mappings 1.0",
 		"status": "WD",
 		"publisher": "W3C",
-		"deliveredBy": [
-			"http://www.w3.org/html",
-			"http://www.w3.org/WAI/PF/"
-		]
+		"deliveredBy":[
+		"http://www.w3.org/html",
+		"http://www.w3.org/WAI/PF/"]
 	},
 	"MSAA": {
 		"href": "https://msdn.microsoft.com/en-us/library/ms697707.aspx",
@@ -157,75 +156,67 @@ var biblio = {
 		"href": "http://www.w3.org/TR/svg-aam-1.0/",
 		"status": "WD",
 		"publisher": "W3C",
-		"authors": [
-			"Amelia Bellamy-Royds",
-			"Richard Schwerdtfeger"
-		],
+		"authors":[
+		"Amelia Bellamy-Royds",
+		"Richard Schwerdtfeger"],
 		"etAl": true,
-		"deliveredBy": [
-			"http://www.w3.org/WAI/PF/"
-		]
+		"deliveredBy":[
+		"http://www.w3.org/WAI/PF/"]
 	},
 	"SVG1": {
 		"title": "Scalable Vector Graphics (SVG) 1.0 Specification",
 		"href": "http://www.w3.org/TR/SVG10/",
 		"status": "REC",
 		"publisher": "W3C",
-		"authors": [
-			"John Ferraiolo"
-		],
+		"authors":[
+		"John Ferraiolo"],
 		"etAl": true,
-		"deliveredBy": [
-		"http://www.w3.org/SVG"
-		]
+		"deliveredBy":[
+		"http://www.w3.org/SVG"]
 	},
 	"SVG11": {
 		"title": "Scalable Vector Graphics (SVG) 1.1 (Second Edition)",
 		"href": "http://www.w3.org/TR/SVG11/",
 		"status": "REC",
 		"publisher": "W3C",
-		"authors": [
-			"Erik Dahlström",
-			"Patrick Dengler",
-			"Anthony Grasso",
-			"Chris Lilley",
-			"Cameron McCormack",
-			"Doug Schepers",
-			"Jonathan Watt",
-			"John Ferraiolo",
-			"藤沢 淳 (FUJISAWA Jun)",
-			"Dean Jackson"
-		],
+		"authors":[
+		"Erik Dahlström",
+		"Patrick Dengler",
+		"Anthony Grasso",
+		"Chris Lilley",
+		"Cameron McCormack",
+		"Doug Schepers",
+		"Jonathan Watt",
+		"John Ferraiolo",
+		"藤沢 淳 (FUJISAWA Jun)",
+		"Dean Jackson"],
 		"etAl": true,
-		"deliveredBy": [
-			"http://www.w3.org/SVG"
-		]
+		"deliveredBy":[
+		"http://www.w3.org/SVG"]
 	},
 	"SVG2": {
 		"title": "Scalable Vector Graphics (SVG) 2",
 		"href": "http://www.w3.org/TR/2015/WD-SVG2-20150915/",
 		"status": "WD",
 		"publisher": "W3C",
-		"authors": [
-			"Nikos Andronikos",
-			"Rossen Atanassov",
-			"Tavmjong Bah",
-			"Amelia Bellamy-Royds",
-			"Brian Birtles",
-			"Cyril Concolato",
-			"Erik Dahlström",
-			"Chris Lilley",
-			"Cameron McCormack",
-			"Doug Schepers",
-			"Dirk Schulze",
-			"Richard Schwerdtfeger",
-			"Satoru Takagi",
-			"Jonathan Watt"
-		],
+		"authors":[
+		"Nikos Andronikos",
+		"Rossen Atanassov",
+		"Tavmjong Bah",
+		"Amelia Bellamy-Royds",
+		"Brian Birtles",
+		"Cyril Concolato",
+		"Erik Dahlström",
+		"Chris Lilley",
+		"Cameron McCormack",
+		"Doug Schepers",
+		"Dirk Schulze",
+		"Richard Schwerdtfeger",
+		"Satoru Takagi",
+		"Jonathan Watt"],
 		"etAl": true,
-		"deliveredBy": [
-			"http://www.w3.org/WAI/PF/"
-		]
+		"deliveredBy":[
+		"http://www.w3.org/WAI/PF/"]
 	},
 	"UI-AUTOMATION": {
 		"href": "https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx",
@@ -243,28 +234,24 @@ var biblio = {
 		"href": "http://www.w3.org/TR/wai-aria-1.1/",
 		"status": "WD",
 		"publisher": "W3C",
-		"authors": [
-			"James Craig",
-			"Michael Cooper",
-			"Shane McCarron"
-		],
+		"authors":[
+		"James Craig",
+		"Michael Cooper",
+		"Shane McCarron"],
 		"etAl": true,
-		"deliveredBy": [
-			"http://www.w3.org/WAI/PF/"
-		]
+		"deliveredBy":[
+		"http://www.w3.org/WAI/PF/"]
 	},
 	"WAI-ARIA-10": {
-		"authors": [
-			"James Craig",
-			"Michael Cooper"
-		],
+		"authors":[
+		"James Craig",
+		"Michael Cooper"],
 		"etAl": true,
 		"href": "http://www.w3.org/TR/wai-aria/",
 		"title": "Accessible Rich Internet Applications (WAI-ARIA) 1.0",
 		"status": "REC",
 		"publisher": "W3C",
-		"deliveredBy": [
-			"http://www.w3.org/WAI/PF/"
-		]
+		"deliveredBy":[
+		"http://www.w3.org/WAI/PF/"]
 	}
 };
