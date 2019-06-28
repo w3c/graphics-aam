@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><meta charset="UTF-8"><meta name="generator" content="ReSpec 24.21.7"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><meta charset="UTF-8"><meta name="generator" content="ReSpec 24.23.6"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<title>Graphics Accessibility API Mappings</title>
 		<script src="https://www.w3.org/scripts/jquery/1.11/jquery.min.js"></script>
@@ -323,7 +323,6 @@ var mappingTableLabels = {
 	<link rel="canonical" href="https://www.w3.org/TR/graphics-aam-1.0/"><style>var {
   position: relative;
   cursor: pointer;
-  display: inline-block;
 }
 
 var[data-type]::before,
@@ -358,6 +357,8 @@ var[data-type]::after {
   padding: 6px;
   border-radius: 3px;
   color: #daca88;
+  text-indent: 0;
+  font-weight: normal;
 }
 
 var[data-type]:hover::after,
@@ -534,16 +535,16 @@ var[data-type]:hover::before {
   "preProcess": [
     null
   ],
-  "publishDate": "2019-05-22",
-  "publishISODate": "2019-05-22T00:00:00.000Z",
-  "generatedSubtitle": "Editor's Draft 22 May 2019"
+  "publishDate": "2019-06-28",
+  "publishISODate": "2019-06-28T00:00:00.000Z",
+  "generatedSubtitle": "Editor's Draft 28 June 2019"
 }</script><meta name="description" content="The Graphics Accessibility API Mappings defines how user agents map the WAI-ARIA Graphics Module [GRAPHICS-ARIA-1.0] markup to platform accessibility APIs. It is intended for user agent developers responsible for accessibility in their user agent so that they can support the accessibility of graphics such as that created for [SVG] or [HTML52]."><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"></head>
 	<body class="h-entry informative"><div class="head">
       <a class="logo" href="https://www.w3.org/"><img alt="W3C" width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"></a> <h1 id="title" class="title p-name">Graphics Accessibility API Mappings</h1>
       
       <h2>
         W3C Editor's Draft
-        <time class="dt-published" datetime="2019-05-22">22 May 2019</time>
+        <time class="dt-published" datetime="2019-06-28">28 June 2019</time>
       </h2>
       <dl>
         <dt>This version:</dt><dd>
@@ -600,11 +601,11 @@ var[data-type]:hover::before {
       <hr title="Separator for header">
     </div>
 		<section id="abstract" class="introductory"><h2>Abstract</h2>
-  <p> The Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings defines how <a class="termref internalDFN" href="#dfn-user-agent" data-link-type="dfn">user agents</a> map the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module [<cite class="respec-offending-element" title="Normative references in informative sections are not allowed. Remove '!' from the start of the reference `[[!GRAPHICS-ARIA-1.0]]`" id="respec-offender-normative-references-in-informative-sections-are-not-allowed-remove-from-the-start-of-the-reference-graphics-aria-1-0"><a class="bibref" href="#bib-graphics-aria-1.0" title="WAI-ARIA Graphics Module">GRAPHICS-ARIA-1.0</a></cite>] markup to platform <a class="termref internalDFN" href="#dfn-accessibility-api" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a>. It is intended for user agent developers responsible for accessibility in their user agent so that they can support the accessibility of graphics such as that created for [<cite><a class="bibref" href="#bib-svg" title="Scalable Vector Graphics (SVG) 1.0 Specification">SVG</a></cite>] or [<cite><a class="bibref" href="#bib-html52" title="HTML 5.2">HTML52</a></cite>]. </p>
+  <p> The Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings defines how <a class="termref internalDFN" href="#dfn-user-agent" data-link-type="dfn">user agents</a> map the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module [<cite class="respec-offending-element" title="Normative references in informative sections are not allowed. Remove '!' from the start of the reference `[[!GRAPHICS-ARIA-1.0]]`" id="respec-offender-normative-references-in-informative-sections-are-not-allowed-remove-from-the-start-of-the-reference-graphics-aria-1-0"><a class="bibref" href="#bib-graphics-aria-1.0" title="WAI-ARIA Graphics Module" data-link-type="biblio">GRAPHICS-ARIA-1.0</a></cite>] markup to platform <a class="termref internalDFN" href="#dfn-accessibility-api" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a>. It is intended for user agent developers responsible for accessibility in their user agent so that they can support the accessibility of graphics such as that created for [<cite><a class="bibref" href="#bib-svg" title="Scalable Vector Graphics (SVG) 1.0 Specification" data-link-type="biblio">SVG</a></cite>] or [<cite><a class="bibref" href="#bib-html52" title="HTML 5.2" data-link-type="biblio">HTML52</a></cite>]. </p>
   <p>
     The implementation of this specification in user agents enables authors to produce more accessible graphics
     by conveying common graphics semantics to assistive technologies.
-    It provides Accessibility <abbr title="application programming interface">API</abbr> Mapping guidance for the roles defined in the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module [<cite><a class="bibref" href="#bib-graphics-aria-1.0" title="WAI-ARIA Graphics Module">GRAPHICS-ARIA-1.0</a></cite>].
+    It provides Accessibility <abbr title="application programming interface">API</abbr> Mapping guidance for the roles defined in the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module [<cite><a class="bibref" href="#bib-graphics-aria-1.0" title="WAI-ARIA Graphics Module" data-link-type="biblio">GRAPHICS-ARIA-1.0</a></cite>].
   </p>
   <p>
       The Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings is part of the
@@ -614,7 +615,7 @@ var[data-type]:hover::before {
 
 		</section>
 		<section id="sotd" class="introductory"><h2>Status of This Document</h2><p><em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current <abbr title="World Wide Web Consortium">W3C</abbr> publications and the latest revision of this technical report can be found in the <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at https://www.w3.org/TR/.</em></p> 
-			<p>This is an Editor's Draft of Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings 1.0 by the <a href="https://www.w3.org/WAI/PF/svg-a11y-tf/"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force</a>, a joint task force of the <a href="https://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications Working Group</a> and the <a href="https://www.w3.org/Graphics/SVG/WG/"><abbr title="Scalable Vector Graphics">SVG</abbr> Working Group</a>. It provides guidance for mapping roles in <a href="https://w3c.github.io/graphics-aria/" class="graphics"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a> [<cite><a class="bibref" href="#bib-graphics-aria-1.0" title="WAI-ARIA Graphics Module">GRAPHICS-ARIA-1.0</a></cite>] to accessibility <abbr title="application programming interfaces">APIs</abbr>, and complements <abbr title="Scalable Vector Graphics">SVG</abbr>-specific mappings in the <a href="" class="svg-mapping"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility <abbr title="application programming interface">API</abbr> Mappings</a> [<cite><a class="bibref" href="#bib-svg-aam-1.0" title="SVG Accessibility API Mappings">SVG-AAM-1.0</a></cite>]. It extends <a href="https://w3c.github.io/core-aam/" class="core-mapping">Core Accessibility Mappings 1.1</a> [<cite class="respec-offending-element" title="Normative references in informative sections are not allowed. Remove '!' from the start of the reference `[[!CORE-AAM-1.1]]`" id="respec-offender-normative-references-in-informative-sections-are-not-allowed-remove-from-the-start-of-the-reference-core-aam-1-1"><a class="bibref" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1">CORE-AAM-1.1</a></cite>], and is part of a suite of similar technology-specific Accessibility <abbr title="application programming interface">API</abbr> Mappings specifications.</p>
+			<p>This is an Editor's Draft of Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings 1.0 by the <a href="https://www.w3.org/WAI/PF/svg-a11y-tf/"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force</a>, a joint task force of the <a href="https://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications Working Group</a> and the <a href="https://www.w3.org/Graphics/SVG/WG/"><abbr title="Scalable Vector Graphics">SVG</abbr> Working Group</a>. It provides guidance for mapping roles in <a href="https://w3c.github.io/graphics-aria/" class="graphics"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a> [<cite><a class="bibref" href="#bib-graphics-aria-1.0" title="WAI-ARIA Graphics Module" data-link-type="biblio">GRAPHICS-ARIA-1.0</a></cite>] to accessibility <abbr title="application programming interfaces">APIs</abbr>, and complements <abbr title="Scalable Vector Graphics">SVG</abbr>-specific mappings in the <a href="" class="svg-mapping"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility <abbr title="application programming interface">API</abbr> Mappings</a> [<cite><a class="bibref" href="#bib-svg-aam-1.0" title="SVG Accessibility API Mappings" data-link-type="biblio">SVG-AAM-1.0</a></cite>]. It extends <a href="https://w3c.github.io/core-aam/" class="core-mapping">Core Accessibility Mappings 1.1</a> [<cite class="respec-offending-element" title="Normative references in informative sections are not allowed. Remove '!' from the start of the reference `[[!CORE-AAM-1.1]]`" id="respec-offender-normative-references-in-informative-sections-are-not-allowed-remove-from-the-start-of-the-reference-core-aam-1-1"><a class="bibref" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1" data-link-type="biblio">CORE-AAM-1.1</a></cite>], and is part of a suite of similar technology-specific Accessibility <abbr title="application programming interface">API</abbr> Mappings specifications.</p>
 			<p>Feedback on any aspect of the specification is accepted. For this publication, the <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force particularly seeks feedback on the following questions:</p>
 			<ul>
 				<li>Are mappings of graphics features clear and appropriate?</li>
@@ -628,7 +629,7 @@ var[data-type]:hover::before {
                         an Editor's Draft.
                         
                       </p><p>
-      <a class="respec-offending-element" title="Linking error: not matching <dfn>" id="respec-offender-linking-error-not-matching-dfn">GitHub Issues</a> are preferred for
+      <a class="respec-offending-element" title="Error: No matching dfn found." id="respec-offender-error-no-matching-dfn-found">GitHub Issues</a> are preferred for
             discussion of this specification.
           
       Alternatively, you can send comments to our mailing list.
@@ -666,7 +667,7 @@ var[data-type]:hover::before {
 		<section id="intro" class="informative">
 			<h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction<a class="self-link" aria-label="§" href="#intro"></a></h2><p><em>This section is non-normative.</em></p>
 			<p>The Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings specification provides role mappings 
-    for the roles in the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module  [<cite><a class="bibref" href="#bib-graphics-aria-1.0" title="WAI-ARIA Graphics Module">GRAPHICS-ARIA-1.0</a></cite>].
+    for the roles in the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module  [<cite><a class="bibref" href="#bib-graphics-aria-1.0" title="WAI-ARIA Graphics Module" data-link-type="biblio">GRAPHICS-ARIA-1.0</a></cite>].
    			</p>
   <p>
     For web documents and applications, 
@@ -700,24 +701,24 @@ var[data-type]:hover::before {
   </p>
   <ul>
     <li>
-      <cite><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) 1.1</a></cite> [<cite><a class="bibref" href="#bib-wai-aria-1.1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">WAI-ARIA-1.1</a></cite>], 
+      <cite><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) 1.1</a></cite> [<cite><a class="bibref" href="#bib-wai-aria-1.1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1" data-link-type="biblio">WAI-ARIA-1.1</a></cite>], 
       a planned <abbr title="World Wide Web Consortium">W3C</abbr> recommendation 
-      that extends the exising ARIA standard [<cite><a class="bibref" href="#bib-wai-aria-1.0" title="Accessible Rich Internet Applications (WAI-ARIA) 1.0">WAI-ARIA-1.0</a></cite>].
+      that extends the exising ARIA standard [<cite><a class="bibref" href="#bib-wai-aria-1.0" title="Accessible Rich Internet Applications (WAI-ARIA) 1.0" data-link-type="biblio">WAI-ARIA-1.0</a></cite>].
       It defines the core roles, states, and properties.
     </li>
     <li>
-      <cite><a href="https://www.w3.org/TR/graphics-aria-1.0/"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a></cite> [<cite><a class="bibref" href="#bib-graphics-aria-1.0" title="WAI-ARIA Graphics Module">GRAPHICS-ARIA-1.0</a></cite>],
-      a planned <abbr title="World Wide Web Consortium">W3C</abbr> recommendation that defines graphics roles, states, and properties not included in <cite><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) 1.1</a></cite> [<cite><a class="bibref" href="#bib-wai-aria-1.1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">WAI-ARIA-1.1</a></cite>].
+      <cite><a href="https://www.w3.org/TR/graphics-aria-1.0/"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a></cite> [<cite><a class="bibref" href="#bib-graphics-aria-1.0" title="WAI-ARIA Graphics Module" data-link-type="biblio">GRAPHICS-ARIA-1.0</a></cite>],
+      a planned <abbr title="World Wide Web Consortium">W3C</abbr> recommendation that defines graphics roles, states, and properties not included in <cite><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) 1.1</a></cite> [<cite><a class="bibref" href="#bib-wai-aria-1.1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1" data-link-type="biblio">WAI-ARIA-1.1</a></cite>].
     </li>
     <li>
-      <cite><a href="https://www.w3.org/TR/core-aam-1.1/">Core Accessibility <abbr title="application programming interface">API</abbr> Mappings</a></cite> specification [<cite><a class="bibref" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1">CORE-AAM-1.1</a></cite>], 
+      <cite><a href="https://www.w3.org/TR/core-aam-1.1/">Core Accessibility <abbr title="application programming interface">API</abbr> Mappings</a></cite> specification [<cite><a class="bibref" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1" data-link-type="biblio">CORE-AAM-1.1</a></cite>], 
       which expresses how <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> 
       <a href="#dfn-role" class="termref">roles</a>, <a href="#dfn-state" class="termref">states</a>, and <a href="#dfn-property" class="termref">properties</a> 
       should be supported in user agents 
       using platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr>.
     </li>
     <li>
-      <cite><a href="https://www.w3.org/TR/svg-aam-1.0/"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility <abbr title="application programming interface">API</abbr> Mappings</a></cite> [<cite><a class="bibref" href="#bib-svg-aam-1.0" title="SVG Accessibility API Mappings">SVG-AAM-1.0</a></cite>], a planned <abbr title="World Wide Web Consortium">W3C</abbr> recommendation,
+      <cite><a href="https://www.w3.org/TR/svg-aam-1.0/"><abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility <abbr title="application programming interface">API</abbr> Mappings</a></cite> [<cite><a class="bibref" href="#bib-svg-aam-1.0" title="SVG Accessibility API Mappings" data-link-type="biblio">SVG-AAM-1.0</a></cite>], a planned <abbr title="World Wide Web Consortium">W3C</abbr> recommendation,
       which expresses how <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr>
       <a href="#dfn-role" class="termref">roles</a>, <a href="#dfn-state" class="termref">states</a>, and <a href="#dfn-property" class="termref">properties</a>
       should be supported in user agents
@@ -725,13 +726,13 @@ var[data-type]:hover::before {
     </li>
 
     <li>
-      <cite><a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible Name and Description: Computation and <abbr title="application programming interface">API</abbr> Mappings 1.1</a></cite> [<cite><a class="bibref" href="#bib-accname-aam-1.1" title="Accessible Name and Description Computation 1.1">ACCNAME-AAM-1.1</a></cite>], 
+      <cite><a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible Name and Description: Computation and <abbr title="application programming interface">API</abbr> Mappings 1.1</a></cite> [<cite><a class="bibref" href="#bib-accname-aam-1.1" title="Accessible Name and Description Computation 1.1" data-link-type="biblio">ACCNAME-AAM-1.1</a></cite>], 
       which outlines the specific steps user agents should follow 
       in order to identify accessible names (labels) and descriptions (alternative text) 
       for elements that are exposed to assistive technologies.
     </li>
     <li>
-      <cite><a href="https://www.w3.org/TR/wai-aria-practices/"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Authoring Practices Guide</a></cite> [<cite><a class="bibref" href="#bib-wai-aria-practices-1.1" title="WAI-ARIA Authoring Practices 1.1">WAI-ARIA-PRACTICES-1.1</a></cite>], 
+      <cite><a href="https://www.w3.org/TR/wai-aria-practices/"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Authoring Practices Guide</a></cite> [<cite><a class="bibref" href="#bib-wai-aria-practices-1.1" title="WAI-ARIA Authoring Practices 1.1" data-link-type="biblio">WAI-ARIA-PRACTICES-1.1</a></cite>], 
       a planned <abbr title="World Wide Web Consortium">W3C</abbr> Working Group Note, 
       which describes how web content developers can develop 
       accessible rich internet applications using <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr>. 
@@ -745,7 +746,7 @@ var[data-type]:hover::before {
 		<section class="normative" id="conformance">
 			<h2 id="x2-conformance"><bdi class="secno">2. </bdi>Conformance<a class="self-link" aria-label="§" href="#conformance"></a></h2>
 			<p>The main content of this specification is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn">normative</a> and defines requirements that impact conformance claims. Introductory material, appendices, sections marked as "non-normative" and their subsections, diagrams, examples, and notes are <a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
-			<p>Normative sections provide requirements that <a class="termref internalDFN" href="#dfn-user-agent" data-link-type="dfn">user agents</a> must follow for an implementation to conform to this specification. The keywords <em class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></em>, <em class="rfc2119"><em class="rfc2119" title="MUST NOT">MUST NOT</em></em>, <em class="rfc2119"><em class="rfc2119" title="REQUIRED">REQUIRED</em></em>, <em class="rfc2119"><em class="rfc2119" title="SHALL">SHALL</em></em>, <em class="rfc2119"><em class="rfc2119" title="SHALL NOT">SHALL NOT</em></em>, <em class="rfc2119"><em class="rfc2119" title="SHOULD">SHOULD</em></em>, <em class="rfc2119"><em class="rfc2119" title="RECOMMENDED">RECOMMENDED</em></em>, <em class="rfc2119"><em class="rfc2119" title="MAY">MAY</em></em>, and <em class="rfc2119"><em class="rfc2119" title="OPTIONAL">OPTIONAL</em></em> in this document are to be interpreted as described in <cite><a href="http://www.rfc-editor.org/rfc/rfc2119.txt">Keywords for use in RFCs to indicate requirement levels</a></cite> [<cite><a class="bibref" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>]. RFC-2119 keywords are formatted in uppercase and contained in an element with <code>class="rfc2119"</code>. When the keywords shown above are used, but do not share this format, they do not convey formal information in the RFC 2119 sense, and are merely explanatory, i.e., informative. As much as possible, such usages are avoided in this specification.</p>
+			<p>Normative sections provide requirements that <a class="termref internalDFN" href="#dfn-user-agent" data-link-type="dfn">user agents</a> must follow for an implementation to conform to this specification. The keywords <em class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></em>, <em class="rfc2119"><em class="rfc2119" title="MUST NOT">MUST NOT</em></em>, <em class="rfc2119"><em class="rfc2119" title="REQUIRED">REQUIRED</em></em>, <em class="rfc2119"><em class="rfc2119" title="SHALL">SHALL</em></em>, <em class="rfc2119"><em class="rfc2119" title="SHALL NOT">SHALL NOT</em></em>, <em class="rfc2119"><em class="rfc2119" title="SHOULD">SHOULD</em></em>, <em class="rfc2119"><em class="rfc2119" title="RECOMMENDED">RECOMMENDED</em></em>, <em class="rfc2119"><em class="rfc2119" title="MAY">MAY</em></em>, and <em class="rfc2119"><em class="rfc2119" title="OPTIONAL">OPTIONAL</em></em> in this document are to be interpreted as described in <cite><a href="http://www.rfc-editor.org/rfc/rfc2119.txt">Keywords for use in RFCs to indicate requirement levels</a></cite> [<cite><a class="bibref" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels" data-link-type="biblio">RFC2119</a></cite>]. RFC-2119 keywords are formatted in uppercase and contained in an element with <code>class="rfc2119"</code>. When the keywords shown above are used, but do not share this format, they do not convey formal information in the RFC 2119 sense, and are merely explanatory, i.e., informative. As much as possible, such usages are avoided in this specification.</p>
 			<p>Normative sections provide requirements that authors, user agents and assistive technologies <em class="rfc2119" title="MUST">MUST</em> follow for an implementation to conform to this specification.</p>
 			<p>Non-normative (informative) sections provide information useful to understanding the specification. Such sections may contain examples of recommended practice, but it is not required to follow such recommendations in order to conform to this specification.</p>
 		</section>
@@ -755,8 +756,8 @@ var[data-type]:hover::before {
 <dl class="termlist">
     <dt><dfn data-lt="accessibility api|accessibility apis" id="dfn-accessibility-api" data-dfn-type="dfn">Accessibility <abbr title="Application Programming Interface">API</abbr></dfn></dt>
     <dd>
-      <p>Operating systems and other platforms provide a set of interfaces that expose information about <a class="termref internalDFN" data-lt="object" href="#dfn-object" data-link-type="dfn">objects</a> and <a class="termref internalDFN" data-lt="event" href="#dfn-event" data-link-type="dfn">events</a> to <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>. Assistive technologies use these interfaces to get information about and interact with those <a class="termref internalDFN" data-lt="widget" href="#dfn-widget" data-link-type="dfn">widgets</a>. Examples of accessibility <abbr title="application programming interfaces">APIs</abbr> are <a href="https://msdn.microsoft.com/en-us/library/ms697270(VS.85).aspx">Microsoft Active Accessibility</a> [<cite><a class="bibref" href="#bib-msaa" title="Microsoft Active Accessibility (MSAA) 2.0">MSAA</a></cite>], <a href="https://msdn.microsoft.com/en-us/library/ee684013%28VS.85%29.aspx">Microsoft User Interface Automation</a> [<cite><a class="bibref" href="#bib-ui-automation" title="UI Automation">UI-AUTOMATION</a></cite>], <abbr title="Microsoft Active Accessibility">MSAA</abbr> with <cite><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898(v=vs.85).aspx"><abbr title="User Interface Automation">UIA</abbr> Express</a></cite> [<cite><a class="bibref" href="#bib-uia-express" title="The IAccessibleEx Interface">UIA-EXPRESS</a></cite>], the
-      	<a href="https://developer.apple.com/documentation/appkit/accessibility/nsaccessibility">Mac <abbr title="OS Ten">OS X</abbr> Accessibility Protocol</a> [<cite><a class="bibref" href="#bib-axapi" title="The NSAccessibility Protocol for macOS">AXAPI</a></cite>], the <cite><a href="https://developer.gnome.org/atk/unstable/">Linux/Unix Accessibility Toolkit</a></cite> [<cite><a class="bibref" href="#bib-atk" title="ATK - Accessibility Toolkit">ATK</a></cite>] and <cite><a href="https://developer.gnome.org/libatspi/stable/">Assistive Technology Service Provider Interface</a></cite> [<cite><a class="bibref" href="#bib-at-spi" title="Assistive Technology Service Provider Interface">AT-SPI</a></cite>], and <a href="https://wiki.linuxfoundation.org/accessibility/iaccessible2/start">IAccessible2</a> [<cite><a class="bibref" href="#bib-iaccessible2" title="IAccessible2">IAccessible2</a></cite>].</p>
+      <p>Operating systems and other platforms provide a set of interfaces that expose information about <a class="termref internalDFN" data-lt="object" href="#dfn-object" data-link-type="dfn">objects</a> and <a class="termref internalDFN" data-lt="event" href="#dfn-event" data-link-type="dfn">events</a> to <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>. Assistive technologies use these interfaces to get information about and interact with those <a class="termref internalDFN" data-lt="widget" href="#dfn-widget" data-link-type="dfn">widgets</a>. Examples of accessibility <abbr title="application programming interfaces">APIs</abbr> are <a href="https://msdn.microsoft.com/en-us/library/ms697270(VS.85).aspx">Microsoft Active Accessibility</a> [<cite><a class="bibref" href="#bib-msaa" title="Microsoft Active Accessibility (MSAA) 2.0" data-link-type="biblio">MSAA</a></cite>], <a href="https://msdn.microsoft.com/en-us/library/ee684013%28VS.85%29.aspx">Microsoft User Interface Automation</a> [<cite><a class="bibref" href="#bib-ui-automation" title="UI Automation" data-link-type="biblio">UI-AUTOMATION</a></cite>], <abbr title="Microsoft Active Accessibility">MSAA</abbr> with <cite><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898(v=vs.85).aspx"><abbr title="User Interface Automation">UIA</abbr> Express</a></cite> [<cite><a class="bibref" href="#bib-uia-express" title="The IAccessibleEx Interface" data-link-type="biblio">UIA-EXPRESS</a></cite>], the
+      	<a href="https://developer.apple.com/documentation/appkit/accessibility/nsaccessibility">Mac <abbr title="OS Ten">OS X</abbr> Accessibility Protocol</a> [<cite><a class="bibref" href="#bib-axapi" title="The NSAccessibility Protocol for macOS" data-link-type="biblio">AXAPI</a></cite>], the <cite><a href="https://developer.gnome.org/atk/unstable/">Linux/Unix Accessibility Toolkit</a></cite> [<cite><a class="bibref" href="#bib-atk" title="ATK - Accessibility Toolkit" data-link-type="biblio">ATK</a></cite>] and <cite><a href="https://developer.gnome.org/libatspi/stable/">Assistive Technology Service Provider Interface</a></cite> [<cite><a class="bibref" href="#bib-at-spi" title="Assistive Technology Service Provider Interface" data-link-type="biblio">AT-SPI</a></cite>], and <a href="https://wiki.linuxfoundation.org/accessibility/iaccessible2/start">IAccessible2</a> [<cite><a class="bibref" href="#bib-iaccessible2" title="IAccessible2" data-link-type="biblio">IAccessible2</a></cite>].</p>
     </dd>
     
     
@@ -895,23 +896,23 @@ var[data-type]:hover::before {
 			<h2 id="x4-mapping-wai-aria-to-accessibility-apis"><bdi class="secno">4. </bdi>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr><a class="self-link" aria-label="§" href="#mapping"></a></h2>
 			<section id="mapping_general">
 				<h3 id="x4-1-general-rules-for-exposing-wai-aria-semantics"><bdi class="secno">4.1 </bdi>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics<a class="self-link" aria-label="§" href="#mapping_general"></a></h3>
-				<p>This section <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="https://w3c.github.io/core-aam/#mapping_general">General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a> in [<cite><a class="bibref" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1">CORE-AAM-1.1</a></cite>].</p>
+				<p>This section <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="https://w3c.github.io/core-aam/#mapping_general">General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a> in [<cite><a class="bibref" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1" data-link-type="biblio">CORE-AAM-1.1</a></cite>].</p>
 			</section>
 		</section>
 		<section id="mapping_conflicts">
 			<h2 id="x5-conflicts-between-native-markup-semantics-and-wai-aria"><bdi class="secno">5. </bdi>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr><a class="self-link" aria-label="§" href="#mapping_conflicts"></a></h2>
-			<p>User agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="https://w3c.github.io/core-aam/#mapping_conflicts">Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a> in [<cite><a class="bibref" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1">CORE-AAM-1.1</a></cite>]. </p>
+			<p>User agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="https://w3c.github.io/core-aam/#mapping_conflicts">Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a> in [<cite><a class="bibref" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1" data-link-type="biblio">CORE-AAM-1.1</a></cite>]. </p>
 		</section>
 		<section id="mapping_nodirect">
 			<h2 id="x6-exposing-attributes-that-do-not-directly-map-to-accessibility-api-properties"><bdi class="secno">6. </bdi>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties<a class="self-link" aria-label="§" href="#mapping_nodirect"></a></h2>
-			<p>User agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="https://w3c.github.io/core-aam/#mapping_nodirect">Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a> in [<cite><a class="bibref" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1">CORE-AAM-1.1</a></cite>].</p>
+			<p>User agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to <a class="core-mapping" href="https://w3c.github.io/core-aam/#mapping_nodirect">Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a> in [<cite><a class="bibref" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1" data-link-type="biblio">CORE-AAM-1.1</a></cite>].</p>
 		</section>
 		<section id="mapping_role">
 			<h2 id="x7-role-mapping"><bdi class="secno">7. </bdi>Role mapping<a class="self-link" aria-label="§" href="#mapping_role"></a></h2>
 			<p>Platform <a class="termref internalDFN" href="#dfn-accessibility-api" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a> traditionally have had a finite set of predefined <a class="termref internalDFN" href="#dfn-role" data-link-type="dfn">roles</a> that are expected by <a class="termref internalDFN" href="#dfn-assistive-technology" data-link-type="dfn">assistive technologies</a> on that platform and only one or two roles may be exposed. In contrast, <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> allows multiple roles to be specified as an ordered set of space-separated valid role tokens. The additional roles are fallback roles similar to the concept of specifying multiple fonts in case the first choice font type is not supported.</p>
 			<section id="roleMappingGeneralRules">
 				<h3 id="x7-1-general-rules"><bdi class="secno">7.1 </bdi>General Rules<a class="self-link" aria-label="§" href="#roleMappingGeneralRules"></a></h3>
-				<p>User agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to the Role Mapping <a class="core-mapping" href="https://w3c.github.io/core-aam/#roleMappingGeneralRules">General Rules</a> accessibility <abbr title="application programming interface">API</abbr> computational requirements in [<cite><a class="bibref" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1">CORE-AAM-1.1</a></cite>].</p>
+				<p>User agents <span class="rfc2119"><em class="rfc2119" title="MUST">MUST</em></span> conform to the Role Mapping <a class="core-mapping" href="https://w3c.github.io/core-aam/#roleMappingGeneralRules">General Rules</a> accessibility <abbr title="application programming interface">API</abbr> computational requirements in [<cite><a class="bibref" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1" data-link-type="biblio">CORE-AAM-1.1</a></cite>].</p>
 			</section>
 			<section id="mapping_role_table">
 				<h3 id="x7-2-role-mapping-table"><bdi class="secno">7.2 </bdi>Role Mapping Table<a class="self-link" aria-label="§" href="#mapping_role_table"></a></h3>
