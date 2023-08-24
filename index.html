@@ -1,6 +1,6 @@
 <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head>
 <meta charset="UTF-8">
-<meta name="generator" content="ReSpec 34.1.4">
+<meta name="generator" content="ReSpec 34.1.6">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 dfn{cursor:pointer}
@@ -29,34 +29,11 @@ dfn{cursor:pointer}
 		
 		
 		
-<script src="common/script/mapping-tables.js"></script>
-		
 <link href="common/css/mapping-tables.css" rel="stylesheet" type="text/css">
 		
 <link href="common/css/common.css" rel="stylesheet" type="text/css">
 		
 		
-		
-<script type="text/javascript">
-
-var mappingTableLabels = {
-  viewByTable: "View as a single table",
-  expand: "Expand all",
-  collapse: "Collapse all",
-  showHideCols: "Show/Hide Columns:",
-  showActionText: "Show",
-  hideActionText: "Hide",
-  showToolTipText: "Show column",
-  hideToolTipText: "Hide column",
-
-  // map where keys are @id of associated mapping table:
-  viewByLabels: {
-    "role-mapping-table": "View by roles",
-    "state-property-mapping-table": "View by state/property",
-    "event-mapping-table": "View by state/property"
-  }
-}
-</script>
 	
 <style id="respec-mainstyle">
 @keyframes pop{
@@ -270,15 +247,15 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "dom",
     "infra"
   ],
-  "publishISODate": "2023-07-05T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 05 July 2023"
+  "publishISODate": "2023-08-24T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 24 August 2023"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
 	<body class="h-entry" data-cite="core-aam accname wai-aria dom infra"><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">Graphics Accessibility API Mappings</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2023-07-05">05 July 2023</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2023-08-24">24 August 2023</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -366,7 +343,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       publications and the latest revision of this technical report can be found
       in the <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at
       https://www.w3.org/TR/.</em></p> 
-			<p>This is an Editor's Draft of Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings 1.0 by the <a href="https://www.w3.org/WAI/PF/svg-a11y-tf/">SVG Accessibility Task Force</a>, a joint task force of the <a href="https://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications Working Group</a> and the <a href="https://www.w3.org/Graphics/SVG/WG/">SVG Working Group</a>. It provides guidance for mapping roles in <a href="https://w3c.github.io/graphics-aria/" class="graphics"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-graphics-aria-1.0" title="WAI-ARIA Graphics Module">GRAPHICS-ARIA-1.0</a></cite>] to accessibility <abbr title="application programming interfaces">APIs</abbr>, and complements SVG-specific mappings in the <a href="" class="svg-mapping">SVG Accessibility <abbr title="application programming interface">API</abbr> Mappings</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg-aam-1.0" title="SVG Accessibility API Mappings">SVG-AAM-1.0</a></cite>]. It extends <a href="https://w3c.github.io/core-aam/" class="core-mapping">Core Accessibility Mappings 1.1</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1">CORE-AAM-1.1</a></cite>], and is part of a suite of similar technology-specific Accessibility <abbr title="application programming interface">API</abbr> Mappings specifications.</p>
+			<p>This is an Editor's Draft of Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings 1.0 by the <a href="https://www.w3.org/WAI/PF/svg-a11y-tf/">SVG Accessibility Task Force</a>, a joint task force of the <a href="https://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications Working Group</a> and the <a href="https://www.w3.org/Graphics/SVG/WG/">SVG Working Group</a>. It provides guidance for mapping roles in <a href="https://w3c.github.io/graphics-aria/" class="graphics"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-graphics-aria-1.0" title="WAI-ARIA Graphics Module">GRAPHICS-ARIA-1.0</a></cite>] to accessibility <abbr title="Application Programming Interfaces">APIs</abbr>, and complements SVG-specific mappings in the <a href="" class="svg-mapping">SVG Accessibility <abbr title="application programming interface">API</abbr> Mappings</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg-aam-1.0" title="SVG Accessibility API Mappings">SVG-AAM-1.0</a></cite>]. It extends <a href="https://w3c.github.io/core-aam/" class="core-mapping">Core Accessibility Mappings 1.1</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1">CORE-AAM-1.1</a></cite>], and is part of a suite of similar technology-specific Accessibility <abbr title="application programming interface">API</abbr> Mappings specifications.</p>
 			<p>Feedback on any aspect of the specification is accepted. For this publication, the SVG Accessibility Task Force particularly seeks feedback on the following questions:</p>
 			<ul>
 				<li>Are mappings of graphics features clear and appropriate?</li>
@@ -404,8 +381,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         
   </p><p>
                   This document is governed by the
-                  <a id="w3c_process_revision" href="https://www.w3.org/2021/Process-20211102/">2 November 2021 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
-                </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#intro"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-0"><bdi class="secno">2.1 </bdi>Conformance</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping"><bdi class="secno">3. </bdi>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_general"><bdi class="secno">3.1 </bdi>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_conflicts"><bdi class="secno">4. </bdi>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a class="tocxref" href="#mapping_nodirect"><bdi class="secno">5. </bdi>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a></li><li class="tocline"><a class="tocxref" href="#mapping_role"><bdi class="secno">6. </bdi>Role mapping</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#roleMappingGeneralRules"><bdi class="secno">6.1 </bdi>General Rules</a></li><li class="tocline"><a class="tocxref" href="#mapping_role_table"><bdi class="secno">6.2 </bdi>Role Mapping Table</a></li></ol></li><li class="tocline"><a class="tocxref" href="#changelog"><bdi class="secno">A. </bdi>Change Log</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-first-public-working-draft"><bdi class="secno">A.1 </bdi>Substantive changes since the <span class="formerLink">First Public Working Draft</span></a></li></ol></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">B. </bdi>Acknowledgments</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ack_svga11y"><bdi class="secno">B.1 </bdi>Participants active in the SVG accessibility task force at the time of publication</a></li><li class="tocline"><a class="tocxref" href="#ack_group"><bdi class="secno">B.2 </bdi>Participants active in the ARIA WG at the time of publication</a></li><li class="tocline"><a class="tocxref" href="#ack_funders"><bdi class="secno">B.3 </bdi>Enabling funders</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">C.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">C.2 </bdi>Informative references</a></li></ol></li></ol></nav>
+                  <a id="w3c_process_revision" href="https://www.w3.org/2023/Process-20230612/">12 June 2023 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
+                </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#intro"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance-0"><bdi class="secno">2.1 </bdi>Conformance</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping"><bdi class="secno">3. </bdi>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_general"><bdi class="secno">3.1 </bdi>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_conflicts"><bdi class="secno">4. </bdi>Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a class="tocxref" href="#mapping_nodirect"><bdi class="secno">5. </bdi>Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a></li><li class="tocline"><a class="tocxref" href="#mapping_role"><bdi class="secno">6. </bdi>Role mapping</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#roleMappingGeneralRules"><bdi class="secno">6.1 </bdi>General Rules</a></li><li class="tocline"><a class="tocxref" href="#mapping_role_table"><bdi class="secno">6.2 </bdi>Role Mapping Table</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#role-map-graphics-document"><bdi class="secno">6.2.1 </bdi><code>graphics-document</code></a></li><li class="tocline"><a class="tocxref" href="#role-map-graphics-object"><bdi class="secno">6.2.2 </bdi><code>graphics-object</code></a></li><li class="tocline"><a class="tocxref" href="#role-map-graphics-symbol"><bdi class="secno">6.2.3 </bdi><code>graphics-symbol</code></a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#changelog"><bdi class="secno">A. </bdi>Change Log</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-first-public-working-draft"><bdi class="secno">A.1 </bdi>Substantive changes since the <span class="formerLink">First Public Working Draft</span></a></li></ol></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">B. </bdi>Acknowledgments</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ack_svga11y"><bdi class="secno">B.1 </bdi>Participants active in the SVG accessibility task force at the time of publication</a></li><li class="tocline"><a class="tocxref" href="#ack_group"><bdi class="secno">B.2 </bdi>Participants active in the ARIA WG at the time of publication</a></li><li class="tocline"><a class="tocxref" href="#ack_funders"><bdi class="secno">B.3 </bdi>Enabling funders</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">C.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">C.2 </bdi>Informative references</a></li></ol></li></ol></nav>
 		<section id="intro" class="informative"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#intro" aria-label="Permalink for Section 1."></a></div><p><em>This section is non-normative.</em></p>
 			
 			<p>The Graphics Accessibility <abbr title="application programming interface">API</abbr> Mappings specification provides role mappings 
@@ -430,8 +407,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     The <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module defines a core set of three roles 
     that can convey the structure of a graphic.
     This specification defines how <a data-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> should expose those roles
-    to the <a data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility <abbr title="application programming interfaces">APIs</abbr></a> currently in use,
-    so that the semantic information is available to <a data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-assistive-technologies">assistive technologies</a> that use those <abbr title="application programming interfaces">APIs</abbr>.
+    to the <a data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a> currently in use,
+    so that the semantic information is available to <a data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-assistive-technologies">assistive technologies</a> that use those <abbr title="Application Programming Interfaces">APIs</abbr>.
   </p>
   
   <p>
@@ -522,61 +499,139 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 			</section>
 			<section id="mapping_role_table"><div class="header-wrapper"><h3 id="x6-2-role-mapping-table"><bdi class="secno">6.2 </bdi>Role Mapping Table</h3><a class="self-link" href="#mapping_role_table" aria-label="Permalink for Section 6.2"></a></div>
 				
-				<p> This section defines how roles in graphics map to platform accessibility <abbr title="application programming interfaces">APIs</abbr> based on their native host language semantics and when <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> roles are applied. This section refers directly to the Core Accessibility <abbr title="application programming interface">API</abbr> Mappings specification. </p>
-				<div class="table-container">
-					<table class="map-table elements" id="role-mapping-table">
-						<caption>Table describing mapping of <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> roles to accessibility <abbr title="application programming interfaces">APIs</abbr>.</caption>
-						<thead>
-							<tr>
-								<th><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role</th>
-								<th><a href="https://w3c.github.io/core-aam/#roleMappingComputedRole">Computed Role</a></th>
-								<th>MSAA + IAccessible2 Role + Other IAccessible2 Features</th>
-								<th><abbr title="User Interface Automation">UIA</abbr> Control Type + Other Features</th>
-								<th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr> Role</th>
-								<th><abbr title="Mac OS X Accessibility Protocol">AXAPI</abbr></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr id="role-map-graphics-document">
-								<th><a class="graphics-role-reference" href="https://w3c.github.io/graphics-aria/#graphics-document"><code>graphics-document</code></a></th>
-								<td><code>graphics-document</code></td>
-								<td><p><code>ROLE_SYSTEM_DOCUMENT</code> + <code>STATE_SYSTEM_READONLY</code></p><p>IAccessible2: Object attribute <code>xml-roles:graphics-document</code>. </p></td>
-								<td>Control Type: <code>'Document'</code>.</td>
-								<td><p>Expose <code>ROLE_DOCUMENT_FRAME</code> and object attribute <code>xml-roles:graphics-document</code>.</p></td>
-								<td>
-									AXRole: <code>AXGroup</code><br>
-									AXSubrole: <code>AXDocument</code><br>
-									AXRoleDescription: <code>'document'</code>
-								</td>
-							</tr>
-							<tr id="role-map-graphics-object">
-								<th><a class="graphics-role-reference" href="https://w3c.github.io/graphics-aria/#graphics-object"><code>graphics-object</code></a></th>
-								<td><code>graphics-object</code></td>
-								<td><code>ROLE_SYSTEM_GROUPING</code> + <p>IAccessible2: Object attribute <code>xml-roles:graphics-object</code>.</p></td>
-								<td>Control Type: <code>'Group'</code>.</td>
-								<td><p>Expose <code>ROLE_PANEL</code> and object attribute <code>xml-roles:graphics-object</code>.</p></td>
-								<td>
-									AXRole: <code>AXGroup</code><br>
-									AXSubrole: <code>&lt;nil&gt;</code><br>
-									AXRoleDescription: <code>'group'</code>
-								</td>
-							</tr>
-							<tr id="role-map-graphics-symbol">
-								<th><a class="graphics-role-reference" href="https://w3c.github.io/graphics-aria/#graphics-symbol"><code>graphics-symbol</code></a></th>
-								<td><code>graphics-symbol</code></td>
-								<td><code>ROLE_SYSTEM_GRAPHIC</code><p>IAccessible2: Object attribute <code>xml-roles:graphics-symbol</code>. </p></td>
-								<td>Control Type: <code>'Image'</code>.</td>
-								<td><p>Expose <code>ROLE_IMAGE</code> and object attribute <code>xml-roles:graphics-symbol</code>. </p></td>
-								<td>
-									AXRole: <code>AXImage</code><br>
-									AXSubrole: <code>&lt;nil&gt;</code><br>
-									AXRoleDescription: <code>'image'</code>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</section>
+				<p> This section defines how roles in graphics map to platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr> based on their native host language semantics and when <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> roles are applied. This section refers directly to the Core Accessibility <abbr title="application programming interface">API</abbr> Mappings specification. </p>
+<section id="graphics-document"><div class="header-wrapper"><h4 id="role-map-graphics-document"><bdi class="secno">6.2.1 </bdi><code>graphics-document</code></h4><a class="self-link" href="#role-map-graphics-document" aria-label="Permalink for Section 6.2.1"></a></div>
+<table aria-labelledby="role-map-graphics-document">
+  <tbody>
+    <tr>
+      <th>Graphics-ARIA Specification</th>
+      <td>
+        <a class="graphics-role-reference" href="https://w3c.github.io/graphics-aria/#graphics-document"><code>graphics-document</code></a>
+      </td>
+    </tr>
+    <tr>
+      <th><a href="https://w3c.github.io/core-aam/#roleMappingComputedRole">Computed Role</a></th>
+      <td>
+        <code>graphics-document</code>
+      </td>
+    </tr>
+    <tr>
+      <th>MSAA + IAccessible2 Role + Other IAccessible2 Features</th>
+      <td>
+        <p><code>ROLE_SYSTEM_DOCUMENT</code> + <code>STATE_SYSTEM_READONLY</code></p>
+        <p>IAccessible2: Object attribute <code>xml-roles:graphics-document</code>. </p>
+      </td>
+    </tr>
+    <tr>
+      <th><abbr title="User Interface Automation">UIA</abbr> Control Type + Other Features</th>
+      <td>
+        Control Type: <code>'Document'</code>.
+      </td>
+    </tr>
+    <tr>
+      <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr> Role</th>
+      <td>
+        <p>Expose <code>ROLE_DOCUMENT_FRAME</code> and object attribute <code>xml-roles:graphics-document</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <th><abbr title="Mac OS X Accessibility Protocol">AXAPI</abbr></th>
+      <td>
+        AXRole: <code>AXGroup</code><br>
+        AXSubrole: <code>AXDocument</code><br>
+        AXRoleDescription: <code>'document'</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</section><section id="graphics-object"><div class="header-wrapper"><h4 id="role-map-graphics-object"><bdi class="secno">6.2.2 </bdi><code>graphics-object</code></h4><a class="self-link" href="#role-map-graphics-object" aria-label="Permalink for Section 6.2.2"></a></div>
+<table aria-labelledby="role-map-graphics-object">
+  <tbody>
+    <tr>
+      <th>Graphics-ARIA Specification</th>
+      <td>
+        <a class="graphics-role-reference" href="https://w3c.github.io/graphics-aria/#graphics-object"><code>graphics-object</code></a>
+      </td>
+    </tr>
+    <tr>
+      <th><a href="https://w3c.github.io/core-aam/#roleMappingComputedRole">Computed Role</a></th>
+      <td>
+        <code>graphics-object</code>
+      </td>
+    </tr>
+    <tr>
+      <th>MSAA + IAccessible2 Role + Other IAccessible2 Features</th>
+      <td>
+        <code>ROLE_SYSTEM_GROUPING</code> + <p>IAccessible2: Object attribute <code>xml-roles:graphics-object</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <th><abbr title="User Interface Automation">UIA</abbr> Control Type + Other Features</th>
+      <td>
+        Control Type: <code>'Group'</code>.
+      </td>
+    </tr>
+    <tr>
+      <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr> Role</th>
+      <td>
+        <p>Expose <code>ROLE_PANEL</code> and object attribute <code>xml-roles:graphics-object</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <th><abbr title="Mac OS X Accessibility Protocol">AXAPI</abbr></th>
+      <td>
+        AXRole: <code>AXGroup</code><br>
+        AXSubrole: <code>&lt;nil&gt;</code><br>
+        AXRoleDescription: <code>'group'</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</section><section id="graphics-symbol"><div class="header-wrapper"><h4 id="role-map-graphics-symbol"><bdi class="secno">6.2.3 </bdi><code>graphics-symbol</code></h4><a class="self-link" href="#role-map-graphics-symbol" aria-label="Permalink for Section 6.2.3"></a></div>
+<table aria-labelledby="role-map-graphics-symbol">
+  <tbody>
+    <tr>
+      <th>Graphics-ARIA Specification</th>
+      <td>
+        <a class="graphics-role-reference" href="https://w3c.github.io/graphics-aria/#graphics-symbol"><code>graphics-symbol</code></a>
+      </td>
+    </tr>
+    <tr>
+      <th><a href="https://w3c.github.io/core-aam/#roleMappingComputedRole">Computed Role</a></th>
+      <td>
+        <code>graphics-symbol</code>
+      </td>
+    </tr>
+    <tr>
+      <th>MSAA + IAccessible2 Role + Other IAccessible2 Features</th>
+      <td>
+        <code>ROLE_SYSTEM_GRAPHIC</code>
+        <p>IAccessible2: Object attribute <code>xml-roles:graphics-symbol</code>. </p>
+      </td>
+    </tr>
+    <tr>
+      <th><abbr title="User Interface Automation">UIA</abbr> Control Type + Other Features</th>
+      <td>
+        Control Type: <code>'Image'</code>.
+      </td>
+    </tr>
+    <tr>
+      <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr> Role</th>
+      <td>
+        <p>Expose <code>ROLE_IMAGE</code> and object attribute <code>xml-roles:graphics-symbol</code>. </p>
+      </td>
+    </tr>
+    <tr>
+      <th><abbr title="Mac OS X Accessibility Protocol">AXAPI</abbr></th>
+      <td>
+        AXRole: <code>AXImage</code><br>
+        AXSubrole: <code>&lt;nil&gt;</code><br>
+        AXRoleDescription: <code>'image'</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+			</section></section>
 		</section>
 		<section class="appendix" id="changelog"><div class="header-wrapper"><h2 id="a-change-log"><bdi class="secno">A. </bdi>Change Log</h2><a class="self-link" href="#changelog" aria-label="Permalink for Appendix A."></a></div>
 			
